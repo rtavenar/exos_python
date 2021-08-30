@@ -14,7 +14,7 @@ on:
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
-  deploy-book:
+  publish-book:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -27,13 +27,16 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
+    # Install the python packages (from requirements.txt)
+    - name: Install python packages
+      run: |
+        pip install -r requirements.txt
 
     # Build the html version of the book
     - name: Generate markdown content
       run: |
         mkdir book/gen
         python py/gen_md.py
-        
     - name: Build the html-book
       run: |
         cd book
