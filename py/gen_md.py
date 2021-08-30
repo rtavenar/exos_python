@@ -6,14 +6,16 @@ def format_code(code_skeleton, code_sol, title_level=2):
     s = "\n\n"
     
     s += ("#" * title_level) + " Squelette\n\n"
-    s += "```{code-cell} python\n"
+    # s += "```{code-cell} python\n"
+    s += "```python\n"
     s += code_skeleton
     if not s.endswith("\n"):
         s += "\n"
     s += "```\n\n"
     
     s += ("#" * title_level) + " Proposition de solution\n\n"
-    s += "```{code-cell} python\n"
+    # s += "```{code-cell} python\n"
+    s += "```python\n"
     s += code_sol
     if not s.endswith("\n"):
         s += "\n"
@@ -102,7 +104,7 @@ def gen_content(input_folder):
     # Generate output
     fp = open(output_fname, "w")
     
-    fp.write(myst_header())
+    # fp.write(myst_header())
     fp.write(f"# {title}\n\n")
     fp.write(instructions)
     fp.write(format_code(skeleton, sol, title_level=2))
