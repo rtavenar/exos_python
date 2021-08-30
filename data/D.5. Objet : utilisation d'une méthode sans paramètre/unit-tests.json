@@ -1,0 +1,116 @@
+{
+  "tests": [
+    {
+      "id": 672629,
+      "assignment_id": 1293977,
+      "name": "monCercleExiste",
+      "code": "self.assertIsInstance(monCercle, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas créé de variable ou d'objet nommé \"monCercle\"",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-07-16T16:43:57.521Z"
+    },
+    {
+      "id": 672630,
+      "assignment_id": 1293977,
+      "name": "monCercleEstDeClasseCercle",
+      "code": "self.assertIsInstance(monCercle, Cercle)",
+      "points": null,
+      "failure_message": "La variable ou l'objet \"monCercle\" n'est pas un objet de classe Cercle",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-07-16T16:43:57.521Z"
+    },
+    {
+      "id": 672632,
+      "assignment_id": 1293977,
+      "name": "surfaceExiste",
+      "code": "self.assertIsInstance(surface, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas créé de variable nommée \"surface\"",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-08-30T14:07:38.498Z"
+    },
+    {
+      "id": 672631,
+      "assignment_id": 1293977,
+      "name": "monCercleInitialisationRayon",
+      "code": "self.assertEqual(monCercle.rayon, 20)",
+      "points": null,
+      "failure_message": "L'attribut rayon de l'objet \"monCercle\" n'est pas correctement initialisé",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-08-30T14:07:14.888Z"
+    },
+    {
+      "id": 672633,
+      "assignment_id": 1293977,
+      "name": "calculSurface",
+      "code": "self.assertEqual(surface, pi*monCercle.rayon**2)",
+      "points": null,
+      "failure_message": "Le valeur de la variable \"surface\" est incorrecte",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-08-30T14:08:15.447Z"
+    }
+  ],
+  "meta": [
+    {
+      "id": 672629,
+      "assignment_id": 1293977,
+      "name": "monCercleExiste",
+      "code": "self.assertIsInstance(monCercle, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas créé de variable ou d'objet nommé \"monCercle\"",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-07-16T16:43:57.521Z"
+    },
+    {
+      "id": 672630,
+      "assignment_id": 1293977,
+      "name": "monCercleEstDeClasseCercle",
+      "code": "self.assertIsInstance(monCercle, Cercle)",
+      "points": null,
+      "failure_message": "La variable ou l'objet \"monCercle\" n'est pas un objet de classe Cercle",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-07-16T16:43:57.521Z"
+    },
+    {
+      "id": 672632,
+      "assignment_id": 1293977,
+      "name": "surfaceExiste",
+      "code": "self.assertIsInstance(surface, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas créé de variable nommée \"surface\"",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-08-30T14:07:38.498Z"
+    },
+    {
+      "id": 672631,
+      "assignment_id": 1293977,
+      "name": "monCercleInitialisationRayon",
+      "code": "self.assertEqual(monCercle.rayon, 20)",
+      "points": null,
+      "failure_message": "L'attribut rayon de l'objet \"monCercle\" n'est pas correctement initialisé",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-08-30T14:07:14.888Z"
+    },
+    {
+      "id": 672633,
+      "assignment_id": 1293977,
+      "name": "calculSurface",
+      "code": "self.assertEqual(surface, pi*monCercle.rayon**2)",
+      "points": null,
+      "failure_message": "Le valeur de la variable \"surface\" est incorrecte",
+      "time_deleted": null,
+      "time_created": "2018-07-16T16:43:57.508Z",
+      "time_updated": "2018-08-30T14:08:15.447Z"
+    }
+  ]
+}

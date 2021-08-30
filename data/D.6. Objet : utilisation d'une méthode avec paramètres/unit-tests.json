@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "id": 785939,
+      "assignment_id": 1506601,
+      "name": "monCercleExiste",
+      "code": "self.assertIsInstance(monCercle, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas créé de variable ou d'objet nommé \"monCercle\"",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": null
+    },
+    {
+      "id": 785940,
+      "assignment_id": 1506601,
+      "name": "monCercleEstDeClasseCercle",
+      "code": "self.assertIsInstance(monCercle, Cercle)",
+      "points": null,
+      "failure_message": "La variable ou l'objet \"monCercle\" n'est pas un objet de classe Cercle",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": null
+    },
+    {
+      "id": 785942,
+      "assignment_id": 1506601,
+      "name": "monCercleDeplaceX",
+      "code": "self.assertEqual(monCercle.x, 10)",
+      "points": null,
+      "failure_message": "La position finale en X du centre de l'objet \"monCercle\" n'est pas correcte",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": "2018-08-30T14:41:04.447Z"
+    },
+    {
+      "id": 785943,
+      "assignment_id": 1506601,
+      "name": "monCercleDeplaceY",
+      "code": "self.assertEqual(monCercle.y, 2)",
+      "points": null,
+      "failure_message": "La position finale en Y du centre de l'objet \"monCercle\" n'est pas correcte",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": "2018-08-30T14:42:30.150Z"
+    }
+  ],
+  "meta": [
+    {
+      "id": 785939,
+      "assignment_id": 1506601,
+      "name": "monCercleExiste",
+      "code": "self.assertIsInstance(monCercle, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas créé de variable ou d'objet nommé \"monCercle\"",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": null
+    },
+    {
+      "id": 785940,
+      "assignment_id": 1506601,
+      "name": "monCercleEstDeClasseCercle",
+      "code": "self.assertIsInstance(monCercle, Cercle)",
+      "points": null,
+      "failure_message": "La variable ou l'objet \"monCercle\" n'est pas un objet de classe Cercle",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": null
+    },
+    {
+      "id": 785942,
+      "assignment_id": 1506601,
+      "name": "monCercleDeplaceX",
+      "code": "self.assertEqual(monCercle.x, 10)",
+      "points": null,
+      "failure_message": "La position finale en X du centre de l'objet \"monCercle\" n'est pas correcte",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": "2018-08-30T14:41:04.447Z"
+    },
+    {
+      "id": 785943,
+      "assignment_id": 1506601,
+      "name": "monCercleDeplaceY",
+      "code": "self.assertEqual(monCercle.y, 2)",
+      "points": null,
+      "failure_message": "La position finale en Y du centre de l'objet \"monCercle\" n'est pas correcte",
+      "time_deleted": null,
+      "time_created": "2018-08-30T14:19:56.465Z",
+      "time_updated": "2018-08-30T14:42:30.150Z"
+    }
+  ]
+}

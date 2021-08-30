@@ -1,0 +1,160 @@
+{
+  "tests": [
+    {
+      "id": 785963,
+      "assignment_id": 1506810,
+      "name": "PersonneEstUneClasse",
+      "code": "self.assertIsInstance(Personne,type)",
+      "points": null,
+      "failure_message": "La référence \"Personne\" dans votre programme n'est pas une classe",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:36:28.001Z"
+    },
+    {
+      "id": 785966,
+      "assignment_id": 1506810,
+      "name": "PersonneInitAttributs",
+      "code": "self.assertEquals(Personne('Bernard', 55, 90, 1.85).nom, 'Bernard')\nself.assertEquals(Personne('Bernard', 55, 90, 1.85).age, 55)\nself.assertEquals(Personne('Bernard', 55, 90, 1.85).poids, 90)\nself.assertEquals(Personne('Bernard', 55, 90, 1.85).taille, 1.85)\n",
+      "points": null,
+      "failure_message": "La classe Personne n'initialise pas correctement un des attributs",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:38:45.765Z"
+    },
+    {
+      "id": 785965,
+      "assignment_id": 1506810,
+      "name": "PersonneAttributs",
+      "code": "self.assertIsInstance(Personne('Bernard', 55, 90, 1.85).nom, object)\nself.assertIsInstance(Personne('Bernard', 55, 90, 1.85).age, object)\nself.assertIsInstance(Personne('Bernard', 55, 90, 1.85).poids, object)\nself.assertIsInstance(Personne('Bernard', 55, 90, 1.85).taille, object)\n\n",
+      "points": null,
+      "failure_message": "La classe Personne ne définit pas correctement un ou plusieurs de ses attributs (ou ils sont mal nommés)",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:38:11.955Z"
+    },
+    {
+      "id": 785964,
+      "assignment_id": 1506810,
+      "name": "PersonneInit",
+      "code": "self.assertIsInstance(Personne('toto', 55, 90, 1.85).__init__, types.MethodType)",
+      "points": null,
+      "failure_message": "La classe Personne ne possède pas d'initialisateur, ou il est mal défini (mauvais nom et/ou mauvais nombre de paramètres) ",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:35:14.607Z"
+    },
+    {
+      "id": 787005,
+      "assignment_id": 1506810,
+      "name": "PersonneImc",
+      "code": "self.assertIsInstance(Personne('toto', 55, 90, 1.85).imc, types.MethodType)",
+      "points": null,
+      "failure_message": "La méthode \"imc\" de la classe Personne n'est pas correctement déclarée ou mal nommée",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:19:45.000Z",
+      "time_updated": "2018-08-30T16:47:51.683Z"
+    },
+    {
+      "id": 787084,
+      "assignment_id": 1506810,
+      "name": "PersonneImcCalcul",
+      "code": "self.assertEqual(Personne('toto', 55, 90, 1.85).imc(), 90/(1.85**2))",
+      "points": null,
+      "failure_message": "La méthode \"imc\" de la classe Personne ne retourne pas la bonne valeur d'IMC ou est mal définie (mauvais nombre de paramètres)",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:22:54.000Z",
+      "time_updated": "2018-08-30T16:48:04.246Z"
+    },
+    {
+      "id": 785962,
+      "assignment_id": 1506810,
+      "name": "PersonneExiste",
+      "code": "self.assertIsInstance(Personne, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas défini ou mal nommé \"Personne\" dans votre programme",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:33:48.647Z"
+    }
+  ],
+  "meta": [
+    {
+      "id": 785963,
+      "assignment_id": 1506810,
+      "name": "PersonneEstUneClasse",
+      "code": "self.assertIsInstance(Personne,type)",
+      "points": null,
+      "failure_message": "La référence \"Personne\" dans votre programme n'est pas une classe",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:36:28.001Z"
+    },
+    {
+      "id": 785966,
+      "assignment_id": 1506810,
+      "name": "PersonneInitAttributs",
+      "code": "self.assertEquals(Personne('Bernard', 55, 90, 1.85).nom, 'Bernard')\nself.assertEquals(Personne('Bernard', 55, 90, 1.85).age, 55)\nself.assertEquals(Personne('Bernard', 55, 90, 1.85).poids, 90)\nself.assertEquals(Personne('Bernard', 55, 90, 1.85).taille, 1.85)\n",
+      "points": null,
+      "failure_message": "La classe Personne n'initialise pas correctement un des attributs",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:38:45.765Z"
+    },
+    {
+      "id": 785965,
+      "assignment_id": 1506810,
+      "name": "PersonneAttributs",
+      "code": "self.assertIsInstance(Personne('Bernard', 55, 90, 1.85).nom, object)\nself.assertIsInstance(Personne('Bernard', 55, 90, 1.85).age, object)\nself.assertIsInstance(Personne('Bernard', 55, 90, 1.85).poids, object)\nself.assertIsInstance(Personne('Bernard', 55, 90, 1.85).taille, object)\n\n",
+      "points": null,
+      "failure_message": "La classe Personne ne définit pas correctement un ou plusieurs de ses attributs (ou ils sont mal nommés)",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:38:11.955Z"
+    },
+    {
+      "id": 785964,
+      "assignment_id": 1506810,
+      "name": "PersonneInit",
+      "code": "self.assertIsInstance(Personne('toto', 55, 90, 1.85).__init__, types.MethodType)",
+      "points": null,
+      "failure_message": "La classe Personne ne possède pas d'initialisateur, ou il est mal défini (mauvais nom et/ou mauvais nombre de paramètres) ",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:35:14.607Z"
+    },
+    {
+      "id": 787005,
+      "assignment_id": 1506810,
+      "name": "PersonneImc",
+      "code": "self.assertIsInstance(Personne('toto', 55, 90, 1.85).imc, types.MethodType)",
+      "points": null,
+      "failure_message": "La méthode \"imc\" de la classe Personne n'est pas correctement déclarée ou mal nommée",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:19:45.000Z",
+      "time_updated": "2018-08-30T16:47:51.683Z"
+    },
+    {
+      "id": 787084,
+      "assignment_id": 1506810,
+      "name": "PersonneImcCalcul",
+      "code": "self.assertEqual(Personne('toto', 55, 90, 1.85).imc(), 90/(1.85**2))",
+      "points": null,
+      "failure_message": "La méthode \"imc\" de la classe Personne ne retourne pas la bonne valeur d'IMC ou est mal définie (mauvais nombre de paramètres)",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:22:54.000Z",
+      "time_updated": "2018-08-30T16:48:04.246Z"
+    },
+    {
+      "id": 785962,
+      "assignment_id": 1506810,
+      "name": "PersonneExiste",
+      "code": "self.assertIsInstance(Personne, object)",
+      "points": null,
+      "failure_message": "Vous n'avez pas défini ou mal nommé \"Personne\" dans votre programme",
+      "time_deleted": null,
+      "time_created": "2018-08-30T16:00:06.520Z",
+      "time_updated": "2018-08-30T16:33:48.647Z"
+    }
+  ]
+}

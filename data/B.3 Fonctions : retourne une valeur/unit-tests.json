@@ -1,0 +1,50 @@
+{
+  "tests": [
+    {
+      "id": 779189,
+      "assignment_id": 1489881,
+      "name": "appelFonction",
+      "code": "self.assertIsInstance(somme, types.FunctionType)",
+      "points": null,
+      "failure_message": "La fonction n'existe pas ou est mal nommée !",
+      "time_deleted": null,
+      "time_created": "2018-08-28T13:12:30.000Z",
+      "time_updated": "2018-08-28T13:15:13.731Z"
+    },
+    {
+      "id": 779190,
+      "assignment_id": 1489881,
+      "name": "somme",
+      "code": "self.assertEquals(somme(5,6), 11)\nself.assertEquals(somme(12, 150), 162)",
+      "points": null,
+      "failure_message": "Votre fonction ne retourne pas la bonne valeur !",
+      "time_deleted": null,
+      "time_created": "2018-08-28T13:15:19.000Z",
+      "time_updated": "2018-08-28T13:16:55.769Z"
+    }
+  ],
+  "meta": [
+    {
+      "id": 779189,
+      "assignment_id": 1489881,
+      "name": "appelFonction",
+      "code": "self.assertIsInstance(somme, types.FunctionType)",
+      "points": null,
+      "failure_message": "La fonction n'existe pas ou est mal nommée !",
+      "time_deleted": null,
+      "time_created": "2018-08-28T13:12:30.000Z",
+      "time_updated": "2018-08-28T13:15:13.731Z"
+    },
+    {
+      "id": 779190,
+      "assignment_id": 1489881,
+      "name": "somme",
+      "code": "self.assertEquals(somme(5,6), 11)\nself.assertEquals(somme(12, 150), 162)",
+      "points": null,
+      "failure_message": "Votre fonction ne retourne pas la bonne valeur !",
+      "time_deleted": null,
+      "time_created": "2018-08-28T13:15:19.000Z",
+      "time_updated": "2018-08-28T13:16:55.769Z"
+    }
+  ]
+}
