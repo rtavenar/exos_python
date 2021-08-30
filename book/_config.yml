@@ -1,1 +1,7 @@
 title: "Exercices de Python"
+repository:
+  url                       : https://github.com/rtavenar/exos_python  # Online location of your book
+  path_to_book              : book  # Optional path to your book, relative to the repository root
+  branch                    : master  # Which branch of the repository should be used when creating links (optional)
+launch_buttons:
+  thebe                  : true
