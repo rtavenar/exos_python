@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Input / print",
+        "preffix": "1."
+    },
+    {
+        "title": "Nombres",
+        "preffix": "2."
+    },
+    {
+        "title": "If / else",
+        "preffix": "3."
+    },
+    {
+        "title": "For",
+        "preffix": "4."
+    },
+    {
+        "title": "Chaînes de caractères",
+        "preffix": "5."
+    },
+    {
+        "title": "While",
+        "preffix": "6."
+    },
+    {
+        "title": "Listes",
+        "preffix": "7."
+    },
+    {
+        "title": "Listes 2D",
+        "preffix": "8."
+    },
+    {
+        "title": "Sets",
+        "preffix": "9."
+    },
+    {
+        "title": "Dictionnaires",
+        "preffix": "A."
+    },
+    {
+        "title": "Fonctions",
+        "preffix": "B."
+    },
+    {
+        "title": "Fichiers",
+        "preffix": "C."
+    },
+    {
+        "title": "Objet",
+        "preffix": "D."
+    }
+]

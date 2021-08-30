@@ -1,6 +1,5 @@
-from genericpath import isdir
 import os
-
+import json
 
 def format_code(code_skeleton, code_sol, title_level=2):
     s = "\n\n"
@@ -113,11 +112,20 @@ def gen_content(input_folder):
 
 
 def write_toc(list_content_files):
+    toc_chapters = json.load(open("py/parts.json", "r"))
+    sorted_content_files = sorted(list_content_files)
+    
     fp = open("book/_toc.yml", "w")
     fp.write("format: jb-book\nroot: index\nchapters:\n")
-    for fname in sorted(list_content_files):
-        sub_name = fname[5:-3].replace(':', '\\:')
-        fp.write(f"- file: {sub_name}\n")
+    for chap in toc_chapters:
+        fname_chap = "gen/" + chap['preffix'] + " " + chap['title'].replace("/", "_") + ".md"
+        open("book/" + fname_chap, "w").write(f"# {chap['preffix']} {chap['title']}\n\nCette section contient des exercices.")
+        fp.write(f"  - file: {fname_chap[:-3]}\n")
+        fp.write("    sections:\n")
+        for fname in sorted_content_files:
+            if fname.startswith(f"book/gen/{chap['preffix']}"):
+                sub_name = fname[5:-3].replace(':', '\\:')
+                fp.write(f"    - file: {sub_name}\n")
     fp.close()
 
 if __name__ == "__main__":
