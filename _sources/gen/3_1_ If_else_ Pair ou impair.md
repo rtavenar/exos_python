@@ -1,0 +1,64 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+# 3.1. If/else: Pair ou impair
+
+## Consigne
+
+Étant donné un entier, afficher "pair" s'il est pair ou "impair" sinon.
+
+## Exemple d'entrée #1
+
+```
+5
+```
+
+## Exemple de sortie #1
+
+```
+impair
+```
+
+## Exemple d'entrée #2
+
+```
+6
+```
+
+## Exemple de sortie #2
+
+```
+pair
+```
+
+## Aide
+
+http://rtavenar.github.io/teaching/python_poly/html/poly.html#structures-de-contrôle
+
+## Squelette
+
+```{code-cell} python
+# Lire un entier
+# a = int(input())
+# Afficher une valeur:
+# print(a)
+```
+
+````{dropdown} Proposition de solution
+
+```python
+if int(input()) % 2 == 0:
+  print('pair')
+else:
+  print('impair')
+```
+````

@@ -1,0 +1,102 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+# 7.C. Lists: Huit reines
+
+## Consigne
+
+Il est possible de placer 8 reines sur un échiquier de 8x8 cases de telle sorte qu'aucune reine n'en menace une autre. Il faut pour cela qu'aucune reine ne partage la même ligne colonne ou diagonale avec une autre reine.
+
+
+Sois une disposition de 8 reines sur un échiquier. Si une paire de reines ne respecte pas la règle ci-dessus, afficher "YES", sinon afficher "NO". L'entrée correspond aux coordonnées sur l'échiquier des huit reines. Chaque coordonnée correspondra à une ligne d'entrée. Les coordonnées des reines seront représentées par le numéro de la colonne puis le numéro de la ligne d'un échiquer standard.
+
+
+
+
+
+
+## Exemple d'entrée
+
+```
+1 5
+```
+
+```
+2 3
+```
+
+```
+3 1
+```
+
+```
+4 7
+```
+
+```
+5 2
+```
+
+```
+6 8
+```
+
+```
+7 6
+```
+
+```
+8 4
+```
+
+(exemple de la figure ci-dessus)
+
+## Exemple de sortie
+
+```
+NO
+```
+
+## Aide
+
+http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-listes
+
+https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists
+
+## Squelette
+
+```{code-cell} python
+# Read a list of integers:
+# a = [int(s) for s in input().split()]
+# Print a value:
+# print(a)
+```
+
+````{dropdown} Proposition de solution
+
+```python
+x = []
+y = []
+for i in range(8):
+  a = [int(s) for s in input().split()]
+  x.append(a[0])
+  y.append(a[1])
+answer = 'NO'
+for i in range(8):
+  for j in range(i + 1, 8):
+    if ((x[i] == x[j]) or
+        (y[i] == y[j]) or
+        (abs(x[i] - x[j]) == abs(y[i] - y[j]))):
+      answer = 'YES'
+print(answer)
+```
+````

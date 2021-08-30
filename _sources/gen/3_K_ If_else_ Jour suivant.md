@@ -1,0 +1,97 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+# 3.K. If/else: Jour suivant
+
+## **Énoncé**
+
+Étant donnés un numéro de jour (entier entre 1 et 31) et un mois (entier entre 1 et 12) représentant à eux deux une date, vous afficherez la date du lendemain sous la forme d'un numéro de jour et d'un mois.
+
+On supposera qu'il s'agit d'une date d'une année non bissextile.
+
+## Exemple d'entrée #1
+
+```
+30
+```
+
+```
+3
+```
+
+(30 Mars)
+
+## Exemple de sortie #1
+
+```
+31
+```
+
+```
+3
+```
+
+## Exemple d'entrée #2
+
+```
+31
+```
+
+```
+3
+```
+
+(31 Mars)
+
+## Exemple de sortie #2
+
+```
+1
+```
+
+```
+4
+```
+
+## Aide
+
+http://rtavenar.github.io/teaching/python_poly/html/poly.html#structures-de-contrôle
+
+## Squelette
+
+```{code-cell} python
+# Lire un entier :
+# a = int(input())
+# Afficher une valeur :
+# print(a)
+```
+
+````{dropdown} Proposition de solution
+
+```python
+jour = int(input())
+mois = int(input())
+
+if ((jour == 30) and (mois == 4 or mois == 6 or mois == 9 or mois == 11)
+    or (jour == 28) and (mois == 2)
+    or (jour == 31)):
+  mois += 1
+  jour = 1
+else:
+  jour += 1
+if mois == 13:
+  mois = 1
+
+print(jour)
+print(mois)
+```
+````
