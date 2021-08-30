@@ -13,13 +13,13 @@ def format_code(code_skeleton, code_sol, title_level=2):
         s += "\n"
     s += "```\n\n"
     
-    s += ("#" * title_level) + " Proposition de solution\n\n"
+    s += "````{dropdown} Proposition de solution\n\n"
     # s += "```{code-cell} python\n"
     s += "```python\n"
     s += code_sol
     if not s.endswith("\n"):
         s += "\n"
-    s += "```\n\n"
+    s += "```\n````\n"
     
     return s
 
