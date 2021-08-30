@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3.6. If/else: Chiffres croissants &#8212; Exercices de Python</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3.7. If/else: Palindrome à 4 chiffres" href="3.7.%20If_else_%20Palindrome%20%C3%A0%204%20chiffres.html" />
+    <link rel="prev" title="3.5. If/else: Un seul positif" href="3.5.%20If_else_%20Un%20seul%20positif.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Page d’accueil
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.1.%20Input_print_%20Somme%20de%20trois%20nombres.html">
+   1.1. Input/print: Somme de trois nombres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.2.%20Input_print_%20Calcul%20de%20l%27aire%20d%27un%20triangle%20rectangle.html">
+   1.2. Input/print: Calcul de l’aire d’un triangle rectangle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.3.%20Input_print_%20Hello%2C%20Harry%21.html">
+   1.3. Input/print: Hello, Harry!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.4.%20Input_print_%20Pr%C3%A9c%C3%A9dent%20et%20suivant.html">
+   1.4. Input/print: Précédent et suivant
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.5.%20Input_print_%20Partage%20de%20pommes.html">
+   1.5. Input/print: Partage de pommes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.6.%20Input_print_%20Heures%20et%20minutes.html">
+   1.6. Input/print: Heures et minutes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="1.7.%20Input_print_%20Deux%20horodatages.html">
+   1.7. Input/print: Deux horodatages
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.1.%20Nombres%20_%20deux%20chiffres.html">
+   2.1. Nombres : deux chiffres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.2.%20Nombres%20_%20%C3%A9changer%20les%20chiffresdigits.html">
+   2.2. Nombres : échanger les chiffresdigits
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.3.%20Nombres%20_%20deux%20derniers%20chiffres.html">
+   2.3. Nombres : deux derniers chiffres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.4.%20Nombres%20_%20chiffre%20des%20dizaines.html">
+   2.4. Nombres : chiffre des dizaines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.5.%20Nombres%20_%20premier%20chiffre%20apr%C3%A8s%20la%20virgule.html">
+   2.5. Nombres : premier chiffre après la virgule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.6.%20Nombres%20_%20somme%20des%20chiffres.html">
+   2.6. Nombres : somme des chiffres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.7.%20Nombres%20_%20parcours%20d%27une%20voiture.html">
+   2.7. Nombres : parcours d’une voiture
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.8.%20Nombres%20_%20si%C3%A8cle.html">
+   2.8. Nombres : siècle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.9.%20Nombres%20_%20co%C3%BBt%20total.html">
+   2.9. Nombres : coût total
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.A.%20Nombres%20_%20jour%20de%20la%20semaine.html">
+   2.A. Nombres : jour de la semaine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.B.%20Nombres%20_%20horloge%20num%C3%A9rique.html">
+   2.B. Nombres : horloge numérique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.C.%20Nombres%20_%20cadran%20d%27une%20horloge.html">
+   2.C. Nombres : cadran d’une horloge
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2.D.%20Nombres%20_%20bureaux%20d%27une%20%C3%A9cole.html">
+   2.D. Nombres : bureaux d’une école
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.1.%20If_else_%20Pair%20ou%20impair.html">
+   3.1. If/else: Pair ou impair
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.2.%20If_else_%20Minimum%20de%20deux%20nombres.html">
+   3.2. If/else: Minimum de deux nombres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.3.%20If_else_%20Signe.html">
+   3.3. If/else: Signe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.4.%20If_else_%20Nombre%20%C3%A0%203%20chiffres.html">
+   3.4. If/else: Nombre à 3 chiffres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.5.%20If_else_%20Un%20seul%20positif.html">
+   3.5. If/else: Un seul positif
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   3.6. If/else: Chiffres croissants
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.7.%20If_else_%20Palindrome%20%C3%A0%204%20chiffres.html">
+   3.7. If/else: Palindrome à 4 chiffres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.8.%20If_else_%20Minimum%20de%203%20nombres.html">
+   3.8. If/else: Minimum de 3 nombres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.9.%20If_else_%20Nombre%20de%20jours%20dans%20un%20mois.html">
+   3.9. If/else: Nombre de jours dans un mois
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.A.%20If_else_%20Nombres%20%C3%A9gaux.html">
+   3.A. If/else: Nombres égaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.B.%20If_else_%20Position%20d%27un%20outlier.html">
+   3.B. If/else: Position d’un outlier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.C.%20If_else_%20%C3%89checs%20_%20mouvement%20de%20tour.html">
+   3.C. If/else: Échecs : mouvement de tour
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.D.%20If_else_%20%C3%89checs%20_%20case%20noire.html">
+   3.D. If/else: Échecs : case noire
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.E.%20If_else_%20%C3%89checs%20-%20m%C3%AAme%20couleur.html">
+   3.E. If/else: Échecs - même couleur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.F.%20If_else_%20%C3%89checs%20_%20mouvement%20du%20roi.html">
+   3.F. If/else: Échecs : mouvement du roi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.G.%20If_else_%20%C3%89checs%20_%20mouvements%20de%20fou.html">
+   3.G. If/else: Échecs : mouvements de fou
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.H.%20If_else_%20%C3%89checs%20_%20mouvements%20de%20reine.html">
+   3.H. If/else: Échecs : mouvements de reine
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.I.%20If_else_%20%C3%89checs%20_%20mouvement%20de%20cavalier.html">
+   3.I. If/else: Échecs : mouvement de cavalier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.J.%20If_else_%20Ann%C3%A9e%20bissextile.html">
+   3.J. If/else: Année bissextile
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.K.%20If_else_%20Jour%20suivant.html">
+   3.K. If/else: Jour suivant
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.L.%20If_else_%20%C3%89quation%20lin%C3%A9aire.html">
+   3.L. If/else: Équation linéaire
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.M.%20If_else_%20Minimum%20de%205%20nombres.html">
+   3.M. If/else: Minimum de 5 nombres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.N.%20If_else_%20Sommets%20d%27un%20rectangle.html">
+   3.N. If/else: Sommets d’un rectangle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3.O.%20If_else_%20Tri%20de%203%20nombres.html">
+   3.O. If/else: Tri de 3 nombres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.1.%20For_%20Series%20-%201.html">
+   4.1. For: Series - 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.2.%20For_%20Series%20-%202.html">
+   4.2. For: Series - 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.3.%20For_%20Somme%20de%2010%20nombres.html">
+   4.3. For: Somme de 10 nombres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.4.%20For_%20Somme%20de%20N%20nombres.html">
+   4.4. For: Somme de N nombres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.5.%20For_%20Somme%20des%20cubes.html">
+   4.5. For: Somme des cubes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.6.%20For_%20Factorielle.html">
+   4.6. For: Factorielle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.7.%20For_%20Nombre%20de%20z%C3%A9ros.html">
+   4.7. For: Nombre de zéros
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.8.%20For_%20Somme%20de%20factorielles.html">
+   4.8. For: Somme de factorielles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.9.%20For_%20Carte%20perdue.html">
+   4.9. For: Carte perdue
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4.A.%20For_%20Echelle.html">
+   4.A. For: Echelle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.1.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20Slices.html">
+   5.1. Chaînes de caractères : Slices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.2.%20Cha%C3%AEnes%20de%20carat%C3%A8res%20_%20nombre%20de%20mots.html">
+   5.2. Chaînes de caratères : nombre de mots
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.3.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20deux%20moiti%C3%A9s.html">
+   5.3. Chaînes de caractères : deux moitiés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.4.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20%C3%A9changer%20deux%20mots.html">
+   5.4. Chaînes de caractères : échanger deux mots
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.5.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20premi%C3%A8re%20et%20derni%C3%A8re%20occurences.html">
+   5.5. Chaînes de caractères : première et dernière occurences
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.6.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20deuxi%C3%A8me%20occurrence.html">
+   5.6. Chaînes de caractères : deuxième occurrence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.7.%20Cha%C3%AEne%20de%20caract%C3%A8res%20_%20retirer%20une%20partie.html">
+   5.7. Chaîne de caractères : retirer une partie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.8.%20Cha%C3%AEnes%20de%20carat%C3%A8res%20_%20inverser%20une%20partie.html">
+   5.8. Chaînes de caratères : inverser une partie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.9.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20remplacer.html">
+   5.9. Chaînes de caractères : remplacer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.A.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20retirer%20un%20caract%C3%A8re.html">
+   5.A. Chaînes de caractères : retirer un caractère
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.B.%20Cha%C3%AEne%20de%20caract%C3%A8res%20_%20remplacer%20dans%20une%20sous-partie.html">
+   5.B. Chaîne de caractères : remplacer dans une sous-partie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5.C.%20Cha%C3%AEnes%20de%20caract%C3%A8res%20_%20retirer%20un%20caract%C3%A8re%20tous%20les%20trois%20caract%C3%A8res.html">
+   5.C. Chaînes de caractères : retirer un caractère tous les trois caractères
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.1.%20While_%20Liste%20des%20carr%C3%A9s.html">
+   6.1. While: Liste des carrés
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.2.%20While_%20Plus%20petit%20diviseur.html">
+   6.2. While: Plus petit diviseur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.3.%20While_%20Puissances%20de%202.html">
+   6.3. While: Puissances de 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.4.%20While_%20Course%20%C3%A0%20pied.html">
+   6.4. While: Course à pied
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.5.%20While_%20Longueur%20d%27une%20s%C3%A9quence.html">
+   6.5. While: Longueur d’une séquence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.6.%20While_%20Somme%20d%27une%20s%C3%A9quence.html">
+   6.6. While: Somme d’une séquence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.7.%20While_%20Moyenne%20d%27une%20s%C3%A9quence.html">
+   6.7. While: Moyenne d’une séquence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.8.%20While_%20Maximum%20d%27une%20s%C3%A9quence.html">
+   6.8. While: Maximum d’une séquence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.9.%20While_%20Indice%20du%20maximum.html">
+   6.9. While: Indice du maximum
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.A.%20While_%20Nombre%20d%27%C3%A9l%C3%A9ments%20pairs.html">
+   6.A. While: Nombre d’éléments pairs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.B.%20While_%20Plus%20grand%20que%20le%20pr%C3%A9c%C3%A9dent.html">
+   6.B. While: Plus grand que le précédent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.C.%20While_%20Deuxi%C3%A8me%20plus%20grande%20valeur.html">
+   6.C. While: Deuxième plus grande valeur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.D.%20While_%20nombre%20de%20maxima.html">
+   6.D. While: nombre de maxima
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.E.%20While_%20plus%20grande%20sous-s%C3%A9rie.html">
+   6.E. While: plus grande sous-série
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.F.%20While_%20nombres%20de%20Fibonacci.html">
+   6.F. While: nombres de Fibonacci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6.G.%20While_%20indice%20de%20Fibonacci.html">
+   6.G. While: indice de Fibonacci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.1.%20Lists_%20Indice%20pair.html">
+   7.1. Lists: Indice pair
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.2.%20Lists_%20Element%20pair.html">
+   7.2. Lists: Element pair
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.3.%20Lists_%20Plus%20grand%20que%20le%20voisin%20de%20gauche.html">
+   7.3. Lists: Plus grand que le voisin de gauche
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.4.%20Lists_%20M%C3%AAme%20signe%20que%20son%20voisin.html">
+   7.4. Lists: Même signe que son voisin
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.5.%20Lists_%20Plus%20grand%20que%20ses%20voisins.html">
+   7.5. Lists: Plus grand que ses voisins
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.6.%20Lists_%20Nombre%20d%27%C3%A9l%C3%A9ments%20distincts.html">
+   7.6. Lists: Nombre d’éléments distincts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.7.%20Lists_%20Inversion%20des%20voisins.html">
+   7.7. Lists: Inversion des voisins
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.8.%20Lists_%20Maximum.html">
+   7.8. Lists: Maximum
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.9.%20Lists_%20Inversion%20du%20min%20et%20du%20max.html">
+   7.9. Lists: Inversion du min et du max
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.A.%20Lists_%20Pairs%20de%20nombres%20%C3%A9gaux.html">
+   7.A. Lists: Pairs de nombres égaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.B.%20Lists_%20Element%20unique.html">
+   7.B. Lists: Element unique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.C.%20Lists_%20Huit%20reines.html">
+   7.C. Lists: Huit reines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="7.D.%20Lists_%20Bowling.html">
+   7.D. Lists: Bowling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.1.%20Listes%202D%20_%20multiplicateur.html">
+   8.1. Listes 2D : multiplicateur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.2.%20Listes%202D%20_%20maximum.html">
+   8.2. Listes 2D : maximum
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.3.%20Listes%202D%20_%20diagonales.html">
+   8.3. Listes 2D : diagonales
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.4.%20Listes%202D%20_%20triangles.html">
+   8.4. Listes 2D : triangles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.5.%20Listes%202D%20_%20%C3%A9changer%20des%20colonnes.html">
+   8.5. Listes 2D : échanger des colonnes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.6.%20Listes%202D%20_%20flocon%20de%20neige.html">
+   8.6. Listes 2D : flocon de neige
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8.7.%20Listes%202D%20_%20damier.html">
+   8.7. Listes 2D : damier
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9.1.%20Sets%20_%20nombre%20d%27%C3%A9l%C3%A9ments%20distincts.html">
+   9.1. Sets : nombre d’éléments distincts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9.2.%20Sets%20_%20nombre%20d%27%C3%A9l%C3%A9ments%20communs.html">
+   9.2. Sets : nombre d’éléments communs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9.3.%20Sets%20_%20intersection.html">
+   9.3. Sets : intersection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9.4.%20Sets%20_%20d%C3%A9j%C3%A0%20vu.html">
+   9.4. Sets : déjà vu
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9.5.%20Sets%20_%20deviner%20le%20nombre.html">
+   9.5. Sets : deviner le nombre
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.1.%20Dicts_%20Nombre%20d%27occurrences.html">
+   A.1. Dicts: Nombre d’occurrences
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.2.%20Dicts_%20Synonymes.html">
+   A.2. Dicts: Synonymes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.3.%20Dicts_%20Elections.html">
+   A.3. Dicts: Elections
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.4.%20Dicts_%20Mot%20le%20plus%20fr%C3%A9quent.html">
+   A.4. Dicts: Mot le plus fréquent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.5.%20Dicts_%20Droits%20d%27acc%C3%A8s.html">
+   A.5. Dicts: Droits d’accès
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.6.%20Dicts_%20Pays%20et%20villes.html">
+   A.6. Dicts: Pays et villes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.7.%20Dicts_%20Analyse%20de%20la%20fr%C3%A9quence%20de%20mots.html">
+   A.7. Dicts: Analyse de la fréquence de mots
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="A.8.%20Dicts_%20Dictionnaire%20Fran%C3%A7ais-Latin.html">
+   A.8. Dicts: Dictionnaire Français-Latin
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="B.1%20Fonctions%20_%20retourne%20un%20affichage.html">
+   B.1 Fonctions : retourne un affichage
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="B.2%20Fonctions%20_%20passage%20d%27un%20param%C3%A8tre.html">
+   B.2 Fonctions : passage d’un paramètre
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="B.3%20Fonctions%20_%20retourne%20une%20valeur.html">
+   B.3 Fonctions : retourne une valeur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="B.4%20Fonctions%20_%20Argument%20avec%20une%20valeur%20par%20d%C3%A9faut.html">
+   B.4 Fonctions : Argument avec une valeur par défaut
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="B.5%20Fonctions%20_%20appels%20r%C3%A9cursifs.html">
+   B.5 Fonctions : appels récursifs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="C.1%20Fichiers%20_%20les%20fichiers%20texte%20plat.html">
+   C.1 Fichiers : les fichiers texte plat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="C.2%20Fichiers%20_%20les%20fichiers%20CSV.html">
+   C.2 Fichiers : les fichiers CSV
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="C.3%20Fichiers%20_%20les%20fichiers%20JSON.html">
+   C.3 Fichiers : les fichiers JSON
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.1.%20Objet%20_%20cr%C3%A9ation%20sans%20param%C3%A8tre.html">
+   D.1. Objet : création sans paramètre
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.2.%20Objet%20_%20cr%C3%A9ation%20avec%20param%C3%A8tres.html">
+   D.2. Objet : création avec paramètres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.3.%20Objet%20_%20cr%C3%A9ation%20avec%20param%C3%A8tres%20facultatifs.html">
+   D.3. Objet : création avec paramètres facultatifs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.4.%20Objet%20_%20utilisation%20d%27un%20attribut.html">
+   D.4. Objet : utilisation d’un attribut
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.5.%20Objet%20_%20utilisation%20d%27une%20m%C3%A9thode%20sans%20param%C3%A8tre.html">
+   D.5. Objet : utilisation d’une méthode sans paramètre
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.6.%20Objet%20_%20utilisation%20d%27une%20m%C3%A9thode%20avec%20param%C3%A8tres.html">
+   D.6. Objet : utilisation d’une méthode avec paramètres
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.7.%20Objet%20_%20d%C3%A9finition%20d%27une%20classe%20et%20de%20son%20initialisateur.html">
+   D.7. Objet : définition d’une classe et de son initialisateur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D.8.%20Objet%20_%20d%C3%A9finition%20d%27une%20m%C3%A9thode%20d%27instance.html">
+   D.8. Objet : définition d’une méthode d’instance
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/gen/3.6. If_else_ Chiffres croissants.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enonce">
+   <strong>
+    Énoncé
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemple-d-entree-1">
+   Exemple d’entrée #1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemple-de-sortie-1">
+   Exemple de sortie #1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemple-d-entree-2">
+   Exemple d’entrée #2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exemple-de-sortie-2">
+   Exemple de sortie #2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aide">
+   Aide
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#squelette">
+   Squelette
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proposition-de-solution">
+   Proposition de solution
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="if-else-chiffres-croissants">
+<h1>3.6. If/else: Chiffres croissants<a class="headerlink" href="#if-else-chiffres-croissants" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="enonce">
+<h2><strong>Énoncé</strong><a class="headerlink" href="#enonce" title="Permalink to this headline">¶</a></h2>
+<p>Étant donné un nombre à 3 chiffres, affichez “OUI” si ses trois chiffres sont dans l’ordre strictement croissant de gauche à droite ou “NON” sinon.</p>
+</div>
+<div class="section" id="exemple-d-entree-1">
+<h2>Exemple d’entrée #1<a class="headerlink" href="#exemple-d-entree-1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">179</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exemple-de-sortie-1">
+<h2>Exemple de sortie #1<a class="headerlink" href="#exemple-de-sortie-1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OUI</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exemple-d-entree-2">
+<h2>Exemple d’entrée #2<a class="headerlink" href="#exemple-d-entree-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">197</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exemple-de-sortie-2">
+<h2>Exemple de sortie #2<a class="headerlink" href="#exemple-de-sortie-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NON</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="aide">
+<h2>Aide<a class="headerlink" href="#aide" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://rtavenar.github.io/teaching/python_poly/html/poly.html#structures-de-contr%C3%B4le">http://rtavenar.github.io/teaching/python_poly/html/poly.html#structures-de-contrôle</a></p>
+</div>
+<div class="section" id="squelette">
+<h2>Squelette<a class="headerlink" href="#squelette" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lire un entier :</span>
+<span class="c1"># a = int(input())</span>
+<span class="c1"># Afficher une valeur :</span>
+<span class="c1"># print(a)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="proposition-de-solution">
+<h2>Proposition de solution<a class="headerlink" href="#proposition-de-solution" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">centaines</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">100</span>
+<span class="n">dizaines</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">10</span>
+<span class="n">unites</span> <span class="o">=</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">centaines</span> <span class="o">&lt;</span> <span class="n">dizaines</span> <span class="ow">and</span> <span class="n">dizaines</span> <span class="o">&lt;</span> <span class="n">unites</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;OUI&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NON&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./gen"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="3.5.%20If_else_%20Un%20seul%20positif.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">3.5. If/else: Un seul positif</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="3.7.%20If_else_%20Palindrome%20%C3%A0%204%20chiffres.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">3.7. If/else: Palindrome à 4 chiffres</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
