@@ -41,7 +41,9 @@ def get_title(input_folder):
 
 def get_output_fname(input_folder):
     title = get_title(input_folder)
-    return os.path.join("book", "gen", title.replace("/", "_").replace(":", "_") + ".md")
+    title = title.replace("/", "_").replace(":", "_")
+    title = title.replace(".", "_")
+    return os.path.join("book", "gen", title + ".md")
 
 
 def get_full_path(partial_path):
@@ -120,11 +122,11 @@ def write_toc(list_content_files):
     for chap in toc_chapters:
         fname_chap = "gen/" + chap['preffix'] + " " + chap['title'].replace("/", "_") + ".md"
         open("book/" + fname_chap, "w").write(f"# {chap['preffix']} {chap['title']}\n\nCette section contient des exercices.")
-        fp.write(f"  - file: {fname_chap[:-3]}\n")
+        fp.write(f"  - file: {fname_chap}\n")
         fp.write("    sections:\n")
         for fname in sorted_content_files:
-            if fname.startswith(f"book/gen/{chap['preffix']}"):
-                sub_name = fname[5:-3].replace(':', '\\:')
+            if fname.startswith(f"book/gen/{chap['preffix'].replace('.', '_')}"):
+                sub_name = fname[5:].replace(':', '\\:')
                 fp.write(f"    - file: {sub_name}\n")
     fp.close()
 
