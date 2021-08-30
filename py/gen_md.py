@@ -103,7 +103,7 @@ def gen_content(input_folder):
     # Generate output
     fp = open(output_fname, "w")
     
-    # fp.write(myst_header())
+    fp.write(myst_header())
     fp.write(f"# {title}\n\n")
     fp.write(instructions)
     fp.write(format_code(skeleton, sol, title_level=2))
