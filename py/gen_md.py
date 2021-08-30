@@ -40,7 +40,7 @@ def get_title(input_folder):
 
 def get_output_fname(input_folder):
     title = get_title(input_folder)
-    return os.path.join("book", "gen", title.replace("/", "_") + ".md")
+    return os.path.join("book", "gen", title.replace("/", "_").replace(":", "_") + ".md")
 
 
 def get_full_path(partial_path):
@@ -62,6 +62,21 @@ def list_exercises(path="data/"):
         if (not subpath.startswith(".") and os.path.isdir(os.path.join(path, subpath)))
     ]
     
+
+def myst_header():
+    return """---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
+
+"""
 
 def gen_content(input_folder):
     title = get_title(input_folder)
@@ -87,13 +102,26 @@ def gen_content(input_folder):
     # Generate output
     fp = open(output_fname, "w")
     
+    fp.write(myst_header())
     fp.write(f"# {title}\n\n")
     fp.write(instructions)
     fp.write(format_code(skeleton, sol, title_level=2))
     
     fp.close()
 
+
+def write_toc(list_content_files):
+    fp = open("book/_toc.yml", "w")
+    fp.write("format: jb-book\nroot: index\nchapters:\n")
+    for fname in sorted(list_content_files):
+        sub_name = fname[5:-3].replace(':', '\\:')
+        fp.write(f"- file: {sub_name}\n")
+    fp.close()
+
 if __name__ == "__main__":
+    list_output_files = []
     for ex in list_exercises():
         full_path = get_full_path(ex)
+        list_output_files.append(get_output_fname(full_path))
         gen_content(full_path)
+    write_toc(list_output_files)
