@@ -24,7 +24,7 @@ class Cercle:
 
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 from math import pi
@@ -42,4 +42,4 @@ class Cercle:
 monCercle = Cercle(10)
 perimetre = 2*pi*monCercle.rayon
 ```
-
+````

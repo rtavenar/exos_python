@@ -31,11 +31,11 @@ def somme():
   # Codez votre fonction ici
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 def somme(entier1, entier2):
   # Codez votre fonction ici
   return entier1+entier2
 ```
-
+````

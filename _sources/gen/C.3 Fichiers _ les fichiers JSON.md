@@ -30,7 +30,7 @@ def compte_cles_prefixe(nom_du_fichier, prefixe):
   return None
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 import json
@@ -43,4 +43,4 @@ def compte_cles_prefixe(nom_du_fichier, prefixe):
       n += 1
   return n
 ```
-
+````

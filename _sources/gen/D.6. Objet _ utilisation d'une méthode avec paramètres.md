@@ -28,7 +28,7 @@ class Cercle:
 # Écrire votre code ci-dessous
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 from math import pi
@@ -47,4 +47,4 @@ class Cercle:
 monCercle = Cercle(posX=5, posY=10)
 monCercle.deplacerCentre(5, -8)
 ```
-
+````

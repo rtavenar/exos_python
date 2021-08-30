@@ -28,7 +28,7 @@ def somme_entiers(n):
   return -1
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 def somme_entiers(n):
@@ -36,4 +36,4 @@ def somme_entiers(n):
     return 0
   return n + somme_entiers(n-1)
 ```
-
+````

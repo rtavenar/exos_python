@@ -14,7 +14,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 # Écrire votre code ci-dessous
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 # Écrire votre code ci-dessous
@@ -22,4 +22,4 @@ class Personne:
   def __init__(self, nom):
     self.nom = nom
 ```
-
+````

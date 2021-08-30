@@ -27,11 +27,11 @@ def somme():
   # Codez votre fonction ici
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 def somme(entier1, entier2=0, entier3=0, entier4=0):
   # Codez votre fonction ici
   return entier1+entier2+entier3+entier4
 ```
-
+````

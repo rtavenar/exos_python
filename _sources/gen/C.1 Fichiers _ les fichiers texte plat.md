@@ -28,11 +28,11 @@ def compte_mots(nom_du_fichier):
   return None
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 def compte_mots(nom_de_fichier):
   texte = open(nom_de_fichier, "r", encoding="utf-8").read()
   return len(texte.split())
 ```
-
+````

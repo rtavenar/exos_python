@@ -31,7 +31,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 # print(s)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 text = input().split()
@@ -42,4 +42,4 @@ for word in text:
   print(times_seen[word], end=' ')
   times_seen[word] += 1
 ```
-
+````

@@ -26,7 +26,7 @@ class Cercle:
 
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 from math import pi
@@ -44,4 +44,4 @@ class Cercle:
 monCercle = Cercle(20)
 surface = monCercle.calculerSurface()
 ```
-
+````

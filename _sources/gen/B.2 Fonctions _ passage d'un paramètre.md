@@ -27,11 +27,11 @@ def affichage_bienvenue():
   # Codez votre fonction ici (et affichez le message de bienvenue !)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 def affichage_bienvenue(prenom):
   # Codez votre fonction ici (et affichez le message de bienvenue !)
   print('Bienvenue '+ prenom)
 ```
-
+````

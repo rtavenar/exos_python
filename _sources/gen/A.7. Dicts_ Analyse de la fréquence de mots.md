@@ -55,7 +55,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 # print(s)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 frequency = {}
@@ -68,4 +68,4 @@ for i in sorted(set(frequency.values()), reverse=True):
   for word in sorted([word for word in frequency if frequency[word] == i]):
     print(word, i)
 ```
-
+````

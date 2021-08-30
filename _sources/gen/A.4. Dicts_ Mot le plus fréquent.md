@@ -38,7 +38,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 # print(s)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 words_count = {}
@@ -54,4 +54,4 @@ for word in sorted(words_count):
     print(word)
     break
 ```
-
+````

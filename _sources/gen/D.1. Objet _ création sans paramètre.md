@@ -20,7 +20,7 @@ class Cercle:
 # Écrire votre code ci-dessous
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 class Cercle:
@@ -32,4 +32,4 @@ class Cercle:
 # Écrire votre code ci-dessous
 monCercle = Cercle()
 ```
-
+````

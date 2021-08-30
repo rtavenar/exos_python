@@ -40,7 +40,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 # print(s)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 synonyms = {}
@@ -50,4 +50,4 @@ for i in range(int(input())):
   synonyms[w2] = w1
 print(synonyms[input()])
 ```
-
+````

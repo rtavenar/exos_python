@@ -41,7 +41,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 # print(s)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 city_country = {}
@@ -52,4 +52,4 @@ for _ in range(int(input())):
 for _ in range(int(input())):
   print(city_country[input()])
 ```
-
+````

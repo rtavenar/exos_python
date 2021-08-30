@@ -41,7 +41,7 @@ http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-dictionnairesh
 # print(s)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 la_en = {}
@@ -55,4 +55,4 @@ print(len(la_en))
 for la_word in sorted(la_en):
   print(la_word, '-', ', '.join(sorted(la_en[la_word])))
 ```
-
+````

@@ -37,7 +37,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 # print(s)
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 n = int(input())
@@ -50,4 +50,4 @@ for i in range(n):
 for candidate in sorted(votes_total):
   print(candidate, votes_total[candidate])
 ```
-
+````

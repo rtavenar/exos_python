@@ -30,7 +30,7 @@ def nb_non_vides(nom_du_fichier):
   return None
 ```
 
-## Proposition de solution
+````{dropdown} Proposition de solution
 
 ```python
 import csv
@@ -44,4 +44,4 @@ def nb_non_vides(nom_de_fichier):
         n += 1
   return n
 ```
-
+````
