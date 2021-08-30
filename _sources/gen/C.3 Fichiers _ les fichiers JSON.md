@@ -22,7 +22,7 @@ http://rtavenar.github.io/teaching/python_poly/html/poly.html#lecture-de-fichier
 
 ## Squelette
 
-```python
+```{code-cell} python
 import json
 
 def compte_cles_prefixe(nom_du_fichier, prefixe):

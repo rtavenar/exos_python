@@ -34,7 +34,7 @@ http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-dictionnairesh
 
 ## Squelette
 
-```python
+```{code-cell} python
 # Read a string:
 # s = input()
 # Print a value:

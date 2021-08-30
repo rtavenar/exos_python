@@ -22,7 +22,7 @@ http://rtavenar.github.io/teaching/python_poly/html/poly.html#lecture-de-fichier
 
 ## Squelette
 
-```python
+```{code-cell} python
 def compte_mots(nom_du_fichier):
   # Codez ici votre fonction et modifiez la valeur de retour si besoin
   return None

@@ -10,7 +10,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
 ## Squelette
 
-```python
+```{code-cell} python
 class Cercle:
   def __init__(self, r=15, posX=0, posY=0):
     self.rayon = r		# attribut rayon du cercle

@@ -26,7 +26,7 @@ http://rtavenar.github.io/teaching/python_poly/html/poly.html#fonctions
 
 ## Squelette
 
-```python
+```{code-cell} python
 def affichage_bienvenue():
   # Codez votre fonction ici (et affichez le message de bienvenue !)
 ```

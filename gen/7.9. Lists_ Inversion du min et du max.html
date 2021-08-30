@@ -44,9 +44,9 @@
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -1031,12 +1031,6 @@
 </div>
 <div class="section" id="squelette">
 <h2>Squelette<a class="headerlink" href="#squelette" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read a list of integers:</span>
-<span class="c1"># a = [int(s) for s in input().split()]</span>
-<span class="c1"># Print a value:</span>
-<span class="c1"># print(a)</span>
-</pre></div>
-</div>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 Proposition de solution<div class="summary-down docutils">
@@ -1059,7 +1053,7 @@ Proposition de solution<div class="summary-down docutils">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "rtavenar/exos_python",
             ref: "master",
         },
         codeMirrorConfig: {

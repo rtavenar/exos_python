@@ -30,7 +30,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 
 ## Squelette
 
-```python
+```{code-cell} python
 # Read a string:
 # s = input()
 # Print a value:

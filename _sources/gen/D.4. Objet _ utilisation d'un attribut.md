@@ -10,7 +10,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
 ## Squelette
 
-```python
+```{code-cell} python
 from math import pi
 
 class Cercle:

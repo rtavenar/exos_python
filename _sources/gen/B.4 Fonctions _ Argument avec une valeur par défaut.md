@@ -22,7 +22,7 @@ http://rtavenar.github.io/teaching/python_poly/html/poly.html#fonctions
 
 ## Squelette
 
-```python
+```{code-cell} python
 def somme():
   # Codez votre fonction ici
 ```
