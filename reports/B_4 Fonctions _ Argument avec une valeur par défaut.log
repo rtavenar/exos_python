@@ -21,7 +21,7 @@ def somme():
   # Codez votre fonction ici
 ------------------
 
-[0;36m  File [0;32m"/tmp/ipykernel_3888/2193615072.py"[0;36m, line [0;32m2[0m
+[0;36m  File [0;32m"/tmp/ipykernel_3833/2193615072.py"[0;36m, line [0;32m2[0m
 [0;31m    # Codez votre fonction ici[0m
 [0m                              ^[0m
 [0;31mSyntaxError[0m[0;31m:[0m unexpected EOF while parsing
