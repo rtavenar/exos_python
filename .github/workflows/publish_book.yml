@@ -31,6 +31,7 @@ jobs:
     # Build the html version of the book
     - name: Generate markdown content
       run: |
+        mkdir book/gen
         python py/gen_md.py
         
     - name: Build the html-book
