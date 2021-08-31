@@ -1,19 +1,25 @@
 import os
 import json
 
+
+def replace_urls(text):
+    target_urls = json.load(open("py/change_urls.json", "r"))
+    for modif in target_urls:
+        text = text.replace(modif["source"], modif["target"])
+    return text
+
 def format_code(code_skeleton, code_sol, title_level=2):
     s = "\n\n"
     
     s += ("#" * title_level) + " Squelette\n\n"
-    s += "```{code-cell} python\n"
+    s += "```{code-cell} python\n:tags: [remove-stderr]\n\n"
     # s += "```python\n"
     s += code_skeleton
     if not s.endswith("\n"):
         s += "\n"
     s += "```\n\n"
     
-    s += "````{dropdown} Proposition de solution\n\n"
-    # s += "```{code-cell} python\n"
+    s += "````{admonition} Cliquez ici pour voir la solution\n:class: tip, dropdown\n\n"
     s += "```python\n"
     s += code_sol
     if not s.endswith("\n"):
@@ -30,7 +36,10 @@ def read_instructions(fname_instructions, title_level_increment=0):
             instructions.append(("#" * title_level_increment) + line.strip())
         else:
             instructions.append(line.strip())
-    return "\n".join(instructions)
+    instructions = "\n".join(instructions)
+    instructions = replace_urls(instructions)
+    instructions = instructions.replace("\n```\n\n```", "")  # Ugly fix for the multiple input bug
+    return instructions
 
 
 def get_title(input_folder):
@@ -121,7 +130,7 @@ def write_toc(list_content_files):
     fp.write("format: jb-book\nroot: index\nchapters:\n")
     for chap in toc_chapters:
         fname_chap = "gen/" + chap['preffix'] + " " + chap['title'].replace("/", "_") + ".md"
-        open("book/" + fname_chap, "w").write(f"# {chap['preffix']} {chap['title']}\n\nCette section contient des exercices.")
+        open("book/" + fname_chap, "w").write(f"# {chap['preffix']} {chap['title']}\n\n{chap.get('text', '')}")
         fp.write(f"  - file: {fname_chap}\n")
         fp.write("    sections:\n")
         for fname in sorted_content_files:

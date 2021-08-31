@@ -1,54 +1,67 @@
 [
     {
         "title": "Input / print",
-        "preffix": "1."
+        "preffix": "1.",
+        "text": "Cette section contient des exercices sur l'affichage et la saisie de données."
     },
     {
         "title": "Nombres",
-        "preffix": "2."
+        "preffix": "2.",
+        "text": "Cette section contient des exercices sur la manipulation de nombres."
     },
     {
         "title": "If / else",
-        "preffix": "3."
+        "preffix": "3.",
+        "text": "Cette section contient des exercices sur les structures conditionnelles. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle) du polycopié en ligne."
     },
     {
         "title": "For",
-        "preffix": "4."
+        "preffix": "4.",
+        "text": "Cette section contient des exercices sur les boucles `for`. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/struct.html#boucles-for) du polycopié en ligne."
     },
     {
         "title": "Chaînes de caractères",
-        "preffix": "5."
+        "preffix": "5.",
+        "text": "Cette section contient des exercices sur les chaînes de caractères. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/chaines.html) du polycopié en ligne."
     },
     {
         "title": "While",
-        "preffix": "6."
+        "preffix": "6.",
+        "text": "Cette section contient des exercices sur les boucles `while`. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/struct.html#boucles-while) du polycopié en ligne."
     },
     {
         "title": "Listes",
-        "preffix": "7."
+        "preffix": "7.",
+        "text": "Cette section contient des exercices sur les listes. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/listes.html) du polycopié en ligne."
     },
     {
         "title": "Listes 2D",
-        "preffix": "8."
+        "preffix": "8.",
+        "text": "Cette section contient des exercices sur les listes. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/listes.html) du polycopié en ligne."
     },
     {
         "title": "Sets",
-        "preffix": "9."
+        "preffix": "9.",
+        "text": "Cette section contient des exercices sur les sets."
     },
     {
         "title": "Dictionnaires",
-        "preffix": "A."
+        "preffix": "A.",
+        "text": "Cette section contient des exercices sur les dictionnaires. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/dict.html) du polycopié en ligne."
     },
     {
         "title": "Fonctions",
-        "preffix": "B."
+        "preffix": "B.",
+        "text": "Cette section contient des exercices sur les fonctions. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/struct.html#fonctions) du polycopié en ligne."
     },
     {
         "title": "Fichiers",
-        "preffix": "C."
+        "preffix": "C.",
+        "text": "Cette section contient des exercices sur la manipulation de fichiers. Pour en savoir plus sur ce sujet, vous pouvez consulter [cette page](https://rtavenar.github.io/poly_python/content/fichiers.html) du polycopié en ligne."
     },
     {
         "title": "Objet",
-        "preffix": "D."
+        "preffix": "D.",
+        "text": "Cette section contient des exercices sur les objets."
     }
 ]

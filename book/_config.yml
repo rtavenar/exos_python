@@ -1,4 +1,10 @@
 title: "Exercices de Python"
+author                      : Xavier André, Mathieu Ben, Romain Tavenard -- Université de Rennes 2  # The author of the book
+html:
+  extra_footer: "<p>CC BY-SA</p>"
+sphinx:
+  config:
+    html_show_copyright: false
 repository:
   url                       : https://github.com/rtavenar/exos_python  # Online location of your book
   path_to_book              : book  # Optional path to your book, relative to the repository root

@@ -1,0 +1,38 @@
+[
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#structures-de-contrôle",
+        "target": "https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#boucles-for",
+        "target": "https://rtavenar.github.io/poly_python/content/struct.html#boucles-for"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-chaînes-de-caractères",
+        "target": "https://rtavenar.github.io/poly_python/content/chaines.html"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#boucles-while",
+        "target": "https://rtavenar.github.io/poly_python/content/struct.html#boucles-while"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-listes",
+        "target": "https://rtavenar.github.io/poly_python/content/listes.html"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-dictionnaires",
+        "target": "https://rtavenar.github.io/poly_python/content/dict.html"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#fonctions",
+        "target": "https://rtavenar.github.io/poly_python/content/struct.html#fonctions"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html#lecture-de-fichiers-textuels",
+        "target": "https://rtavenar.github.io/poly_python/content/fichiers.html"
+    },
+    {
+        "source": "http://rtavenar.github.io/teaching/python_poly/html/poly.html",
+        "target": "https://rtavenar.github.io/poly_python/content/intro.html"
+    }
+]
