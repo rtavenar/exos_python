@@ -12,7 +12,7 @@ def replace_urls(text):
 def comment_code(code):
     output_code = ""
     for line in code.split("\n"):
-        if not code.startswith("#"):
+        if not line.startswith("#"):
             output_code += "# " + line + "\n"
         else:
             output_code += line + "\n"
