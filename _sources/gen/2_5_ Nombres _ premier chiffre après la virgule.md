@@ -40,7 +40,7 @@ https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operat
 # a = float(input())
 # Afficher la valeur de a :
 # print(a)
-
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

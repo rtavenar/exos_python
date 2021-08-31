@@ -35,7 +35,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 #   def calculerSurface(self):
 #     return pi*self.rayon**2
 #   
-# # Écrire votre code ci-dessous
+# Écrire votre code ci-dessous
 # 
 # 
 ```

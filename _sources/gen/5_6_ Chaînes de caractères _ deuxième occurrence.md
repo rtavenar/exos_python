@@ -69,7 +69,7 @@ https://docs.python.org/fr/3.6/library/stdtypes.html#str.rfind
 # s = input()
 # Afficher une chaîne de caractères :
 # print(s)
-
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

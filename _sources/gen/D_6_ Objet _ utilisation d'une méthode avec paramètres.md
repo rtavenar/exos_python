@@ -38,7 +38,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 #     self.x += depX
 #     self.y += depY
 #   
-# # Écrire votre code ci-dessous
+# Écrire votre code ci-dessous
 # 
 ```
 

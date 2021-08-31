@@ -60,7 +60,7 @@ https://docs.python.org/fr/3.6/library/stdtypes.html#common-sequence-operations
 # s = input()
 # Afficher la chaîne s :
 # print(s)
-
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

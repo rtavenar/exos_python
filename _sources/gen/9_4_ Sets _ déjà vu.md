@@ -45,7 +45,7 @@ https://docs.python.org/fr/3.6/library/stdtypes.html#set-types-set-frozenset
 # s = input()
 # Afficher la valeur de s :
 # print(s)
-
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

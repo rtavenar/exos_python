@@ -48,7 +48,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists
 # a = [int(s) for s in input().split()]
 # Print a value:
 # print(a)
-
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

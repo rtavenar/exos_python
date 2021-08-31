@@ -46,7 +46,7 @@ https://docs.python.org/fr/3.6/reference/compound_stmts.html#the-while-statement
 # a = int(input())
 # Afficher la valeur de a :
 # print(a)
-
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

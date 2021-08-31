@@ -30,7 +30,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 #     self.x = posX			# attribut position en X du centre du cercle
 #     self.y = posY			# attribut position en Y du centre du cercle
 # 
-# # Écrire votre code ci-dessous
+# Écrire votre code ci-dessous
 # 
 ```
 

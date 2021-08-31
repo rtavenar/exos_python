@@ -44,7 +44,7 @@ https://docs.python.org/fr/3/tutorial/inputoutput.html
 # a = input()
 # Afficher une chaîne de caractères:
 # print(a)
-
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution
