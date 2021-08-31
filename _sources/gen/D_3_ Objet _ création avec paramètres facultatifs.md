@@ -23,6 +23,8 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 class Cercle:
   def __init__(self, r=15, posX=0, posY=0):
     self.rayon = r		# attribut rayon du cercle
@@ -32,7 +34,8 @@ class Cercle:
 # Écrire votre code ci-dessous
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 class Cercle:

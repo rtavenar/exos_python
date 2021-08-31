@@ -34,16 +34,19 @@ somme(1,2)
 
 **Aide**
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#fonctions
+https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 def somme():
   # Codez votre fonction ici
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 def somme(entier1, entier2):

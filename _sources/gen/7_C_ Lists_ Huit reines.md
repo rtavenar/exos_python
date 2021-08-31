@@ -28,33 +28,12 @@ Sois une disposition de 8 reines sur un échiquier. Si une paire de reines ne re
 
 ```
 1 5
-```
-
-```
 2 3
-```
-
-```
 3 1
-```
-
-```
 4 7
-```
-
-```
 5 2
-```
-
-```
 6 8
-```
-
-```
 7 6
-```
-
-```
 8 4
 ```
 
@@ -68,20 +47,23 @@ NO
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-listes
+https://rtavenar.github.io/poly_python/content/listes.html
 
 https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read a list of integers:
 # a = [int(s) for s in input().split()]
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 x = []

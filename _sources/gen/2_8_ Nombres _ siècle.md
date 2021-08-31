@@ -42,13 +42,16 @@ https://snakify.org/lessons/integer_float_numbers/steps/1/
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read an integer:
 # a = int(input())
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 a = int(input())

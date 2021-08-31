@@ -30,11 +30,13 @@ print(nb_non_vides("a.csv"))
 
 **Aide**
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#lecture-de-fichiers-textuels
+https://rtavenar.github.io/poly_python/content/fichiers.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 import csv
 
 def nb_non_vides(nom_du_fichier):
@@ -42,7 +44,8 @@ def nb_non_vides(nom_du_fichier):
   return None
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 import csv

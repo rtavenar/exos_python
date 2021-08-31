@@ -30,20 +30,23 @@ Hello world
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-cha%C3%AEnes-de-caract%C3%A8res
+https://rtavenar.github.io/poly_python/content/intro.html#les-cha%C3%AEnes-de-caract%C3%A8res
 
 https://docs.python.org/fr/3.6/library/stdtypes.html#str.split
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire une chaîne de caractères :
 # s = input()
 # Afficher une chaîne de caractères :
 # print(s)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 print(len(input().split()))

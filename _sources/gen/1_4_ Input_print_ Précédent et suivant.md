@@ -31,20 +31,23 @@ Le nombre précédant 179 est 178
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html
+https://rtavenar.github.io/poly_python/content/intro.html
 
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire un entier :
 # a = int(input())
 # Afficher la valeur de a :
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 n = int(input())

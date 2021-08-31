@@ -30,20 +30,23 @@ kernelspec:
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-listes
+https://rtavenar.github.io/poly_python/content/listes.html
 
 https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read a list of integers:
 # a = [int(s) for s in input().split()]
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 num_distinct = 1

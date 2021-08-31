@@ -35,13 +35,15 @@ Le programme lit les nombres N et K et devra afficher la réponse aux deux quest
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html
+https://rtavenar.github.io/poly_python/content/intro.html
 
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read the numbers like this:
 # n = int(input())
 
@@ -53,7 +55,8 @@ print(63 // 5)
 print(63 % 5)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 n = int(input())

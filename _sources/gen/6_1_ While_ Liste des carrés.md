@@ -30,18 +30,21 @@ Pour un entier N donné, affichez (dans l'ordre) tous les carrés d'entiers posi
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#boucles-while
+https://rtavenar.github.io/poly_python/content/struct.html#boucles-while
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read an integer:
 # a = int(input())
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 n = int(input())

@@ -41,13 +41,16 @@ https://docs.python.org/fr/3.6/reference/compound_stmts.html#the-while-statement
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire un entier au clavier :
 # a = int(input())
 # Afficher la valeur de a :
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 prev, next = 1, 1

@@ -47,13 +47,16 @@ https://docs.python.org/fr/3.6/tutorial/datastructures.html#nested-list-comprehe
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire une liste 2D d'entiers :
 # a = [[int(j) for j in input().split()] for i in range(NUM_ROWS)]
 # Afficher la valeur de a :
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 n = int(input())

@@ -35,13 +35,16 @@ https://docs.python.org/fr/3.6/library/stdtypes.html#str.replace
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire une chaîne de caractères :
 # s = input()
 # Afficher une chaîne de caractères :
 # print(s)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 print(input().replace('@', ''))

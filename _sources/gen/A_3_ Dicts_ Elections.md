@@ -36,20 +36,23 @@ Obama 17
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-dictionnaires
+https://rtavenar.github.io/poly_python/content/dict.html
 
 https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read a string:
 # s = input()
 # Print a value:
 # print(s)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 n = int(input())

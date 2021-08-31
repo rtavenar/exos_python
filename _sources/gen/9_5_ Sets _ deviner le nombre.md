@@ -42,13 +42,16 @@ https://docs.python.org/fr/3.6/library/stdtypes.html#set-types-set-frozenset
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire une chaîne de caractères au clavier :
 # s = input()
 # Afficher la valeur de s :
 # print(s)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 n = int(input())

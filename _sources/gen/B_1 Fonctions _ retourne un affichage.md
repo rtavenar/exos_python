@@ -34,16 +34,19 @@ Bienvenue
 
 **Aide**
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#fonctions
+https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 def affichage_bienvenue():
   # Codez votre fonction ici (et affichez le message de bienvenue !)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 def affichage_bienvenue():

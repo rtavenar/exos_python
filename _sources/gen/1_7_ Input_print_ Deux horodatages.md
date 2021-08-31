@@ -21,25 +21,10 @@ Calculer puis afficher le nombre de secondes entre les deux horodatages.
 
 ```
 1
-```
-
-```
 1
-```
-
-```
 1
-```
-
-```
 2
-```
-
-```
 2
-```
-
-```
 2
 ```
 
@@ -53,25 +38,10 @@ Calculer puis afficher le nombre de secondes entre les deux horodatages.
 
 ```
 1
-```
-
-```
 2
-```
-
-```
 30
-```
-
-```
 1
-```
-
-```
 3
-```
-
-```
 20
 ```
 
@@ -83,20 +53,23 @@ Calculer puis afficher le nombre de secondes entre les deux horodatages.
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html
+https://rtavenar.github.io/poly_python/content/intro.html
 
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read an integer:
 # a = int(input())
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 hours_1 = int(input())

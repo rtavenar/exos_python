@@ -36,18 +36,21 @@ Par exemple, si N = 3900, alors 3900 secondes se sont écoulées depuis minuit (
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html
+https://rtavenar.github.io/poly_python/content/intro.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read an integer:
 # a = int(input())
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 num_seconds = int(input())

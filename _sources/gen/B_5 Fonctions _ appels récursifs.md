@@ -30,17 +30,20 @@ somme_entiers(10)
 
 **Aide**
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#fonctions
+https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 def somme_entiers(n):
   # Codez votre fonction ici (et changez sa valeur de retour !)
   return -1
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 def somme_entiers(n):

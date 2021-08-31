@@ -23,6 +23,8 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 from math import pi
 
 class Cercle:
@@ -36,7 +38,8 @@ class Cercle:
 
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 from math import pi

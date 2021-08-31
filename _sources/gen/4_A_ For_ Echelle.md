@@ -35,7 +35,7 @@ Pour faire cela, vous pouvez utiliser l'argument end de la fonction print().
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#boucles-for
+https://rtavenar.github.io/poly_python/content/struct.html#boucles-for
 
 https://docs.python.org/fr/3/reference/compound_stmts.html#for
 
@@ -44,13 +44,16 @@ https://docs.python.org/fr/3/library/functions.html#print
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read an integer:
 # a = int(input())
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 n = int(input())

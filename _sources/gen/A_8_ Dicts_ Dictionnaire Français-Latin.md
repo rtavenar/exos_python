@@ -25,9 +25,6 @@ Affichez le dictionnaire Latin-Français dans le même format. En particulier, l
 ```
 2
 pomme - malum, pomum
-```
-
-```
 mauvais - malum, malus
 ```
 
@@ -42,18 +39,21 @@ pomum - pomme
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#les-dictionnaireshttps://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
+https://rtavenar.github.io/poly_python/content/dict.htmlhttps://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read a string:
 # s = input()
 # Print a value:
 # print(s)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 la_en = {}

@@ -37,13 +37,16 @@ https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operat
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire un entier :
 # a = int(input())
 # Afficher la valeur de a :
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 item_dollars = int(input())

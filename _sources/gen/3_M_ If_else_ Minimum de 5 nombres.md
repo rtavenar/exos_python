@@ -20,21 +20,9 @@ kernelspec:
 
 ```
 10
-```
-
-```
 20
-```
-
-```
 30
-```
-
-```
 40
-```
-
-```
 50
 ```
 
@@ -46,18 +34,21 @@ kernelspec:
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#structures-de-contrôle
+https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Lire un entier :
 # a = int(input())
 # Afficher une valeur :
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 least = int(input())

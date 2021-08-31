@@ -22,9 +22,6 @@ kernelspec:
 1
 7
 9
-```
-
-```
 5
 0
 ```
@@ -37,18 +34,21 @@ kernelspec:
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#boucles-while
+https://rtavenar.github.io/poly_python/content/struct.html#boucles-while
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Read an integer:
 # a = int(input())
 # Print a value:
 # print(a)
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 maximum = a = int(input())

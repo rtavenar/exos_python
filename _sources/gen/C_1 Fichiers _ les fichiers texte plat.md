@@ -30,17 +30,20 @@ print(compte_mots("a.txt"))
 
 **Aide**
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#lecture-de-fichiers-textuels
+https://rtavenar.github.io/poly_python/content/fichiers.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 def compte_mots(nom_du_fichier):
   # Codez ici votre fonction et modifiez la valeur de retour si besoin
   return None
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 def compte_mots(nom_de_fichier):

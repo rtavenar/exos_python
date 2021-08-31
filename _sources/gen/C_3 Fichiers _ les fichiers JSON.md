@@ -30,11 +30,13 @@ print(compte_cles_prefixe("a.json", "abc"))
 
 **Aide**
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html#lecture-de-fichiers-textuels
+https://rtavenar.github.io/poly_python/content/fichiers.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 import json
 
 def compte_cles_prefixe(nom_du_fichier, prefixe):
@@ -42,7 +44,8 @@ def compte_cles_prefixe(nom_du_fichier, prefixe):
   return None
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 import json

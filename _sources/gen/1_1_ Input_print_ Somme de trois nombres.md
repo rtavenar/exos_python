@@ -32,13 +32,15 @@ kernelspec:
 
 ## Aide
 
-http://rtavenar.github.io/teaching/python_poly/html/poly.html
+https://rtavenar.github.io/poly_python/content/intro.html
 
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
 ## Squelette
 
 ```{code-cell} python
+:tags: [remove-stderr]
+
 # Ce programme lit 2 nombres et affiche leur somme :
 a = int(input())
 b = int(input())
@@ -47,7 +49,8 @@ print(a + b)
 # Vous pouvez modifier ce programme pour lire et faire la somme de 3 nombres
 ```
 
-````{dropdown} Proposition de solution
+````{admonition} Cliquez ici pour voir la solution
+:class: tip, dropdown
 
 ```python
 a = int(input())
