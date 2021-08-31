@@ -12,7 +12,7 @@ def format_code(code_skeleton, code_sol, title_level=2):
     s = "\n\n"
     
     s += ("#" * title_level) + " Squelette\n\n"
-    s += "```{code-cell} python\n:tags: [remove-stderr]\n\n"
+    s += "```{code-cell} ipython3\n\n"
     # s += "```python\n"
     s += code_skeleton
     if not s.endswith("\n"):
