@@ -47,6 +47,7 @@ https://snakify.org/lessons/integer_float_numbers/steps/1/
 # a = int(input())
 # Print a value:
 # print(a)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

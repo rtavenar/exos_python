@@ -45,6 +45,7 @@ https://rtavenar.github.io/poly_python/content/struct.html#boucles-while
 # a = int(input())
 # Print a value:
 # print(a)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

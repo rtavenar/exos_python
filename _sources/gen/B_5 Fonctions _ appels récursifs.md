@@ -36,9 +36,9 @@ https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ```{code-cell} ipython3
 
-def somme_entiers(n):
-  # Codez votre fonction ici (et changez sa valeur de retour !)
-  return -1
+# def somme_entiers(n):
+#   # Codez votre fonction ici (et changez sa valeur de retour !)
+#   return -1
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

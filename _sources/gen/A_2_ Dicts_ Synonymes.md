@@ -51,6 +51,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 # s = input()
 # Print a value:
 # print(s)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

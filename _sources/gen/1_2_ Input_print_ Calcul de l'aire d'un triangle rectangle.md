@@ -45,6 +45,7 @@ https://docs.python.org/fr/3/tutorial/inputoutput.html
 b = int(input())
 
 # Afficher le résultat avec : print()
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

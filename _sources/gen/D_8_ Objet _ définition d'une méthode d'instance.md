@@ -27,6 +27,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 ```{code-cell} ipython3
 
 # Écrire votre code ci-dessous
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

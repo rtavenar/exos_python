@@ -50,6 +50,7 @@ https://docs.python.org/fr/3/reference/compound_stmts.html#for
 # a = int(input())
 # Print a value:
 # print(a)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

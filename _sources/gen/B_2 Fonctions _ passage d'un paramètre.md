@@ -36,8 +36,8 @@ https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ```{code-cell} ipython3
 
-def affichage_bienvenue():
-  # Codez votre fonction ici (et affichez le message de bienvenue !)
+# def affichage_bienvenue():
+#   # Codez votre fonction ici (et affichez le message de bienvenue !)
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

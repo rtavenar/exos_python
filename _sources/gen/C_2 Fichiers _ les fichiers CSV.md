@@ -36,11 +36,12 @@ https://rtavenar.github.io/poly_python/content/fichiers.html
 
 ```{code-cell} ipython3
 
-import csv
-
-def nb_non_vides(nom_du_fichier):
-  # Codez votre fonction ici et modifiez la valeur de retour si besoin
-  return None
+# import csv
+# 
+# def nb_non_vides(nom_du_fichier):
+#   # Codez votre fonction ici et modifiez la valeur de retour si besoin
+#   return None
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

@@ -36,11 +36,12 @@ https://rtavenar.github.io/poly_python/content/fichiers.html
 
 ```{code-cell} ipython3
 
-import json
-
-def compte_cles_prefixe(nom_du_fichier, prefixe):
-  # Codez votre fonction ici et modifiez sa valeur de retour si besoin
-  return None
+# import json
+# 
+# def compte_cles_prefixe(nom_du_fichier, prefixe):
+#   # Codez votre fonction ici et modifiez sa valeur de retour si besoin
+#   return None
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

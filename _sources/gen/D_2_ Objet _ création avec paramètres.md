@@ -24,13 +24,14 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
 ```{code-cell} ipython3
 
-class Cercle:
-  def __init__(self, r, posX, posY):
-    self.rayon = r		# attribut rayon du cercle
-    self.x = posX			# attribut position en X du centre du cercle
-    self.y = posY			# attribut position en Y du centre du cercle
-
-# Écrire votre code ci-dessous
+# class Cercle:
+#   def __init__(self, r, posX, posY):
+#     self.rayon = r		# attribut rayon du cercle
+#     self.x = posX			# attribut position en X du centre du cercle
+#     self.y = posY			# attribut position en Y du centre du cercle
+# 
+# # Écrire votre code ci-dessous
+# 
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

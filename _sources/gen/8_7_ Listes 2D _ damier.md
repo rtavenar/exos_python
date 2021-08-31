@@ -49,6 +49,7 @@ https://docs.python.org/fr/3.6/tutorial/datastructures.html#nested-list-comprehe
 # a = [int(s) for s in input().split()]
 # Afficher la valeure de a :
 # print(a)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

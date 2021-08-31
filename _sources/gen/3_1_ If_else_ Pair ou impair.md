@@ -52,6 +52,7 @@ https://rtavenar.github.io/poly_python/content/struct.html#structures-de-control
 # a = int(input())
 # Afficher une valeur:
 # print(a)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

@@ -50,6 +50,7 @@ https://docs.python.org/fr/3.6/tutorial/datastructures.html#nested-list-comprehe
 # a = int(input())
 # Afficher la valeur de a :
 # print(a)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

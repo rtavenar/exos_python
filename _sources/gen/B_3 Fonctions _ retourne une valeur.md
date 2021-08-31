@@ -40,8 +40,8 @@ https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ```{code-cell} ipython3
 
-def somme():
-  # Codez votre fonction ici
+# def somme():
+#   # Codez votre fonction ici
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

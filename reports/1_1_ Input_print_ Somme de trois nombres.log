@@ -27,7 +27,7 @@ print(a + b)
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mStdinNotImplementedError[0m                  Traceback (most recent call last)
-[0;32m/tmp/ipykernel_1658/199683286.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/tmp/ipykernel_1747/199683286.py[0m in [0;36m<module>[0;34m[0m
 [1;32m      1[0m [0;31m# Ce programme lit 2 nombres et affiche leur somme :[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 2[0;31m [0ma[0m [0;34m=[0m [0mint[0m[0;34m([0m[0minput[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      3[0m [0mb[0m [0;34m=[0m [0mint[0m[0;34m([0m[0minput[0m[0;34m([0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m

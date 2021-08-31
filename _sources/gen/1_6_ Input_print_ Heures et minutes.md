@@ -46,6 +46,7 @@ https://rtavenar.github.io/poly_python/content/intro.html
 # a = int(input())
 # Print a value:
 # print(a)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

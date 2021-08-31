@@ -36,9 +36,9 @@ https://rtavenar.github.io/poly_python/content/fichiers.html
 
 ```{code-cell} ipython3
 
-def compte_mots(nom_du_fichier):
-  # Codez ici votre fonction et modifiez la valeur de retour si besoin
-  return None
+# def compte_mots(nom_du_fichier):
+#   # Codez ici votre fonction et modifiez la valeur de retour si besoin
+#   return None
 ```
 
 ````{admonition} Cliquez ici pour voir la solution

@@ -49,6 +49,7 @@ https://rtavenar.github.io/poly_python/content/dict.htmlhttps://docs.python.org/
 # s = input()
 # Print a value:
 # print(s)
+
 ```
 
 ````{admonition} Cliquez ici pour voir la solution
