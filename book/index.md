@@ -8,6 +8,6 @@ Pour réaliser un exercice, vous pouvez utiliser la fonctionnalité de "Live Cod
 Pour cela, lorsque vous êtes sur un exercice, activez le "Live Code" en cliquant sur {fa}`rocket` --> {guilabel}`Live Code` en haut de la page.
 Cela lance le chargement d'un noyau Python, et dès que celui-ci est prêt (ce qui peut prendre un peu de temps, soyez patients), un message s'affiche et les squelettes de code deviennent exécutables, vous permettant de vous entrainer, comme dans la vidéo ci-dessous :
 
-<video controls width="50%">
+<video controls width="100%">
     <source src="media/thebe.mp4" type="video/mp4">
 </video>
