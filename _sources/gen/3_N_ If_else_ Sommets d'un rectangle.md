@@ -63,8 +63,7 @@ https://rtavenar.github.io/poly_python/content/struct.html#structures-de-control
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Lire un entier :
 # a = int(input())

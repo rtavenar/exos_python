@@ -34,8 +34,7 @@ https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operat
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Lire un entier :
 # a = float(input())

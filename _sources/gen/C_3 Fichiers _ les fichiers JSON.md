@@ -34,8 +34,7 @@ https://rtavenar.github.io/poly_python/content/fichiers.html
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 import json
 

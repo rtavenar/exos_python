@@ -43,8 +43,7 @@ https://docs.python.org/fr/3.6/tutorial/datastructures.html#nested-list-comprehe
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Lire une liste d'entiers :
 # a = [int(s) for s in input().split()]

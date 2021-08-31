@@ -38,8 +38,7 @@ https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 def affichage_bienvenue():
   # Codez votre fonction ici (et affichez le message de bienvenue !)

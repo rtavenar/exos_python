@@ -48,8 +48,7 @@ https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Read a list of integers:
 # a = [int(s) for s in input().split()]

@@ -40,8 +40,7 @@ https://docs.python.org/fr/3.6/reference/compound_stmts.html#the-while-statement
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Lire un entier au clavier :
 # a = int(input())

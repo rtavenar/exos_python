@@ -38,8 +38,7 @@ https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 def somme():
   # Codez votre fonction ici

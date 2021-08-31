@@ -22,8 +22,7 @@ https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 class Cercle:
   def __init__(self, r, posX, posY):

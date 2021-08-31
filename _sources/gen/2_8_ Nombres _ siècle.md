@@ -41,8 +41,7 @@ https://snakify.org/lessons/integer_float_numbers/steps/1/
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Read an integer:
 # a = int(input())

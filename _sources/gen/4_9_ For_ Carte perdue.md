@@ -43,8 +43,7 @@ https://docs.python.org/fr/3/reference/compound_stmts.html#for
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Read an integer:
 # a = int(input())

@@ -38,8 +38,7 @@ https://rtavenar.github.io/poly_python/content/struct.html#boucles-while
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Read an integer:
 # a = int(input())

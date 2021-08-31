@@ -34,8 +34,7 @@ https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 def somme_entiers(n):
   # Codez votre fonction ici (et changez sa valeur de retour !)

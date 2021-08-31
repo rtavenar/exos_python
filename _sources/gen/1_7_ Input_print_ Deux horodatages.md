@@ -59,8 +59,7 @@ https://docs.python.org/fr/3/tutorial/inputoutput.html
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Read an integer:
 # a = int(input())

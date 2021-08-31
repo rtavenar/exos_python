@@ -40,8 +40,7 @@ https://docs.python.org/fr/3.6/library/stdtypes.html#str.replace
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Lire une chaîne de caractères au clavier :
 # s = input()

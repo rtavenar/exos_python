@@ -40,8 +40,7 @@ https://rtavenar.github.io/poly_python/content/intro.html
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Read an integer:
 # a = int(input())

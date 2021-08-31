@@ -43,8 +43,7 @@ https://rtavenar.github.io/poly_python/content/dict.htmlhttps://docs.python.org/
 
 ## Squelette
 
-```{code-cell} python
-:tags: [remove-stderr]
+```{code-cell} ipython3
 
 # Read a string:
 # s = input()
