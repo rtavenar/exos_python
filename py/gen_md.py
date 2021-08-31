@@ -8,13 +8,23 @@ def replace_urls(text):
         text = text.replace(modif["source"], modif["target"])
     return text
 
+
+def comment_code(code):
+    output_code = ""
+    for line in code.split("\n"):
+        if not code.startswith("#"):
+            output_code += "# " + line + "\n"
+        else:
+            output_code += line + "\n"
+    return output_code
+
 def format_code(code_skeleton, code_sol, title_level=2):
     s = "\n\n"
     
     s += ("#" * title_level) + " Squelette\n\n"
     s += "```{code-cell} ipython3\n\n"
     # s += "```python\n"
-    s += code_skeleton
+    s += comment_code(code_skeleton)
     if not s.endswith("\n"):
         s += "\n"
     s += "```\n\n"
