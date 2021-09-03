@@ -32,6 +32,12 @@ print(compte_mots("a.txt"))
 
 https://rtavenar.github.io/poly_python/content/fichiers.html
 
+```{code-cell} bash
+:tags: [hide-input, thebe-init]
+
+wget https://raw.githubusercontent.com/rtavenar/exos_python/master/data/C.1%20Fichiers%20%3A%20les%20fichiers%20texte%20plat/a.txt
+```
+
 ## Squelette
 
 ```{code-cell} ipython3
