@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # B.4 Fonctions : Argument avec une valeur par défaut
 
 **Énoncé**
@@ -32,13 +20,9 @@ somme(1,2,3)
 
 https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'def somme():\n  # Codez votre fonction ici'})</script>
 
-```{code-cell} ipython3
-
-# def somme():
-#   # Codez votre fonction ici
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 1.3. Input/print: Hello, Harry!
 
 ## Consigne
@@ -36,16 +24,9 @@ https://rtavenar.github.io/poly_python/content/intro.html
 
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire une chaîne de caractères:\n# a = input()\n# Afficher une chaîne de caractères:\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Lire une chaîne de caractères:
-# a = input()
-# Afficher une chaîne de caractères:
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 3.L. If/else: Équation linéaire
 
 ## **Énoncé**
@@ -48,15 +36,9 @@ pas de solution
 
 https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher une valeur :\n# print(a)'})</script>
 
-```{code-cell} ipython3
-
-# Lire un entier :
-# a = int(input())
-# Afficher une valeur :
-# print(a)
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

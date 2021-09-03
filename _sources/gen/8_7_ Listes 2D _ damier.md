@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 8.7. Listes 2D : damier
 
 ## Consignes
@@ -41,16 +29,9 @@ https://docs.python.org/fr/3.6/tutorial/datastructures.html#list-comprehensions
 
 https://docs.python.org/fr/3.6/tutorial/datastructures.html#nested-list-comprehensions
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': "# Lire une liste d'entiers :\n# a = [int(s) for s in input().split()]\n# Afficher la valeure de a :\n# print(a)\n"})</script>
 
-```{code-cell} ipython3
-
-# Lire une liste d'entiers :
-# a = [int(s) for s in input().split()]
-# Afficher la valeure de a :
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

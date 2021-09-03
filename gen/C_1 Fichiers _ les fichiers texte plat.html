@@ -40,6 +40,8 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/vue.js"></script>
+    <script src="../_static/pythonpad.bundle.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -938,10 +940,7 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/gen/C_1 Fichiers _ les fichiers texte plat.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/gen/C_1 Fichiers _ les fichiers texte plat.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -963,44 +962,11 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/rtavenar/exos_python/master?urlpath=tree/book/gen/C_1 Fichiers _ les fichiers texte plat.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#squelette">
-   Squelette
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -1023,39 +989,14 @@
 </div>
 <p><strong>Aide</strong></p>
 <p><a class="reference external" href="https://rtavenar.github.io/poly_python/content/fichiers.html">https://rtavenar.github.io/poly_python/content/fichiers.html</a></p>
-<div class="cell tag_hide-input tag_thebe-init docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rtavenar</span><span class="o">/</span><span class="n">exos_python</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">C</span><span class="mf">.1</span><span class="o">%</span><span class="k">20Fichiers</span>%20%3A%20les%20fichiers%20texte%20plat/a.txt
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3973/521597280.py&quot;</span><span class="gt">, line </span><span class="mi">1</span>
-    <span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rtavenar</span><span class="o">/</span><span class="n">exos_python</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">C</span><span class="mf">.1</span><span class="o">%</span><span class="k">20Fichiers</span>%20%3A%20les%20fichiers%20texte%20plat/a.txt
-         <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="squelette">
-<h2>Squelette<a class="headerlink" href="#squelette" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># def compte_mots(nom_du_fichier):</span>
-<span class="c1">#   # Codez ici votre fonction et modifiez la valeur de retour si besoin</span>
-<span class="c1">#   return None</span>
-</pre></div>
-</div>
-</div>
-</div>
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'def compte_mots(nom_du_fichier):\n  # Codez ici votre fonction et modifiez la valeur de retour si besoin\n  return None'})</script>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Cliquez ici pour voir la solution</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">compte_mots</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">):</span>
   <span class="n">texte</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
   <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">texte</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>

@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 2.8. Nombres : siècle
 
 ## Consigne
@@ -39,16 +27,9 @@ You may also try step-by-step theory chunks:
 
 https://snakify.org/lessons/integer_float_numbers/steps/1/
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Read an integer:
-# a = int(input())
-# Print a value:
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

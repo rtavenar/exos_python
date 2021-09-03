@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 2.5. Nombres : premier chiffre après la virgule
 
 ## Consignes
@@ -32,16 +20,9 @@ Etant donné un nombre réel positif, afficher son premier chiffre après la vir
 
 https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operations
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = float(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Lire un entier :
-# a = float(input())
-# Afficher la valeur de a :
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

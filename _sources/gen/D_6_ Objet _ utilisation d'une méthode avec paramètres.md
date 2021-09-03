@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # D.6. Objet : utilisation d'une méthode avec paramètres
 
 ## Consignes
@@ -22,25 +10,9 @@ kernelspec:
 
 https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'from math import pi\n\nclass Cercle:\n  def __init__(self, r=15, posX=0, posY=0):\n    self.rayon = r\t\t# attribut rayon du cercle\n    self.x = posX\t\t\t# attribut position en X du centre du cercle\n    self.y = posY\t\t\t# attribut position en Y du centre du cercle\n  \n  def deplacerCentre(self, depX, depY):\n    self.x += depX\n    self.y += depY\n  \n# Écrire votre code ci-dessous\n'})</script>
 
-```{code-cell} ipython3
-
-# from math import pi
-# 
-# class Cercle:
-#   def __init__(self, r=15, posX=0, posY=0):
-#     self.rayon = r		# attribut rayon du cercle
-#     self.x = posX			# attribut position en X du centre du cercle
-#     self.y = posY			# attribut position en Y du centre du cercle
-#   
-#   def deplacerCentre(self, depX, depY):
-#     self.x += depX
-#     self.y += depY
-#   
-# Écrire votre code ci-dessous
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # B.2 Fonctions : passage d'un paramètre
 
 **Énoncé**
@@ -32,13 +20,9 @@ Bienvenue Régis
 
 https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'def affichage_bienvenue():\n  # Codez votre fonction ici (et affichez le message de bienvenue !)'})</script>
 
-```{code-cell} ipython3
-
-# def affichage_bienvenue():
-#   # Codez votre fonction ici (et affichez le message de bienvenue !)
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

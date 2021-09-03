@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 2.C. Nombres : cadran d'une horloge
 
 ## Consignes
@@ -36,16 +24,9 @@ L'aiguille des heures d'une horloge analogique a tourné de α degrés depuis mi
 
 https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operations
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Lire un entier :
-# a = int(input())
-# Afficher la valeur de a :
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

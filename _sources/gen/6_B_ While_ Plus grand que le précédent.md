@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 6.B. While: Plus grand que le précédent
 
 ## **Énoncé**
@@ -37,16 +25,9 @@ kernelspec:
 
 https://rtavenar.github.io/poly_python/content/struct.html#boucles-while
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Read an integer:
-# a = int(input())
-# Print a value:
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

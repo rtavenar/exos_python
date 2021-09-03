@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 7.9. Lists: Inversion du min et du max
 
 ## Consigne
@@ -34,16 +22,9 @@ https://rtavenar.github.io/poly_python/content/listes.html
 
 https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read a list of integers:\n# a = [int(s) for s in input().split()]\n# Print a value:\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Read a list of integers:
-# a = [int(s) for s in input().split()]
-# Print a value:
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

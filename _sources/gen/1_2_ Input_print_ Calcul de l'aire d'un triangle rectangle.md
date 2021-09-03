@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 1.2. Input/print: Calcul de l'aire d'un triangle rectangle
 
 ## Consigne
@@ -37,16 +25,9 @@ https://rtavenar.github.io/poly_python/content/intro.html
 
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lecture des nombres b et h comme ci-dessous :\nb = int(input())\n\n# Afficher le résultat avec : print()\n'})</script>
 
-```{code-cell} ipython3
-
-# Lecture des nombres b et h comme ci-dessous :
-# b = int(input())
-# 
-# Afficher le résultat avec : print()
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

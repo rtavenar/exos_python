@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 2.D. Nombres : bureaux d'une école
 
 ## Consignes
@@ -39,16 +27,9 @@ Dans l'exemple ci-dessous il y a trois classes. La première classe contient 20 
 
 https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operations
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Lire un entier :
-# a = int(input())
-# Afficher la valeur de a :
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

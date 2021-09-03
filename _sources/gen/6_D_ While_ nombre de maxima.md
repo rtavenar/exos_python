@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 6.D. While: nombre de maxima
 
 ## Consignes
@@ -51,16 +39,9 @@ kernelspec:
 
 https://docs.python.org/fr/3.6/reference/compound_stmts.html#the-while-statement
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier au clavier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Lire un entier au clavier :
-# a = int(input())
-# Afficher la valeur de a :
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

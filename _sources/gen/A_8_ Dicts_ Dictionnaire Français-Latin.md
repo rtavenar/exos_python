@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # A.8. Dicts: Dictionnaire Français-Latin
 
 ## Énoncé
@@ -41,16 +29,9 @@ pomum - pomme
 
 https://rtavenar.github.io/poly_python/content/dict.htmlhttps://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read a string:\n# s = input()\n# Print a value:\n# print(s)\n'})</script>
 
-```{code-cell} ipython3
-
-# Read a string:
-# s = input()
-# Print a value:
-# print(s)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

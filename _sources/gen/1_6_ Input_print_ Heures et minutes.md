@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 1.6. Input/print: Heures et minutes
 
 ## Consigne
@@ -38,16 +26,9 @@ Par exemple, si N = 3900, alors 3900 secondes se sont écoulées depuis minuit (
 
 https://rtavenar.github.io/poly_python/content/intro.html
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
-```{code-cell} ipython3
-
-# Read an integer:
-# a = int(input())
-# Print a value:
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

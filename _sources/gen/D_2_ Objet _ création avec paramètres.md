@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # D.2. Objet : création avec paramètres
 
 ## Consignes
@@ -20,19 +8,9 @@ kernelspec:
 
 https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'class Cercle:\n  def __init__(self, r, posX, posY):\n    self.rayon = r\t\t# attribut rayon du cercle\n    self.x = posX\t\t\t# attribut position en X du centre du cercle\n    self.y = posY\t\t\t# attribut position en Y du centre du cercle\n\n# Écrire votre code ci-dessous\n'})</script>
 
-```{code-cell} ipython3
-
-# class Cercle:
-#   def __init__(self, r, posX, posY):
-#     self.rayon = r		# attribut rayon du cercle
-#     self.x = posX			# attribut position en X du centre du cercle
-#     self.y = posY			# attribut position en Y du centre du cercle
-# 
-# Écrire votre code ci-dessous
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

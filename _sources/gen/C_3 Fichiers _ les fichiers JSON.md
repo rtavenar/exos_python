@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # C.3 Fichiers : les fichiers JSON
 
 **Énoncé**
@@ -32,17 +20,9 @@ print(compte_cles_prefixe("a.json", "abc"))
 
 https://rtavenar.github.io/poly_python/content/fichiers.html
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'import json\n\ndef compte_cles_prefixe(nom_du_fichier, prefixe):\n  # Codez votre fonction ici et modifiez sa valeur de retour si besoin\n  return None\n'})</script>
 
-```{code-cell} ipython3
-
-# import json
-# 
-# def compte_cles_prefixe(nom_du_fichier, prefixe):
-#   # Codez votre fonction ici et modifiez sa valeur de retour si besoin
-#   return None
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

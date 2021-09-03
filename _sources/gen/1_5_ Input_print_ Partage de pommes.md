@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 1.5. Input/print: Partage de pommes
 
 ## Consigne
@@ -39,20 +27,9 @@ https://rtavenar.github.io/poly_python/content/intro.html
 
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read the numbers like this:\n# n = int(input())\n\n# Print the result with print()\n\n# Example of division, integer division and remainder:\nprint(63 / 5)\nprint(63 // 5)\nprint(63 % 5)'})</script>
 
-```{code-cell} ipython3
-
-# Read the numbers like this:
-# n = int(input())
-# 
-# Print the result with print()
-# 
-# Example of division, integer division and remainder:
-# print(63 / 5)
-# print(63 // 5)
-# print(63 % 5)
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

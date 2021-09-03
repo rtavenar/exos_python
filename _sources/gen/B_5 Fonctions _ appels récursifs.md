@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # B.5 Fonctions : appels récursifs
 
 **Énoncé**
@@ -32,14 +20,9 @@ somme_entiers(10)
 
 https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'def somme_entiers(n):\n  # Codez votre fonction ici (et changez sa valeur de retour !)\n  return -1'})</script>
 
-```{code-cell} ipython3
-
-# def somme_entiers(n):
-#   # Codez votre fonction ici (et changez sa valeur de retour !)
-#   return -1
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

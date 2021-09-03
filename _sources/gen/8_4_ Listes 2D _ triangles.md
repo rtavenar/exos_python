@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 8.4. Listes 2D : triangles
 
 ## Consignes
@@ -44,16 +32,9 @@ https://docs.python.org/fr/3.6/tutorial/datastructures.html#list-comprehensions
 
 https://docs.python.org/fr/3.6/tutorial/datastructures.html#nested-list-comprehensions
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': "# Lire une liste 2D d'entiers :\n# a = [[int(j) for j in input().split()] for i in range(NUM_ROWS)]\n# Afficher la valeur de a :\n# print(a)\n"})</script>
 
-```{code-cell} ipython3
-
-# Lire une liste 2D d'entiers :
-# a = [[int(j) for j in input().split()] for i in range(NUM_ROWS)]
-# Afficher la valeur de a :
-# print(a)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

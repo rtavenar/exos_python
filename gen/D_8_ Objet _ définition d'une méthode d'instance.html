@@ -40,6 +40,8 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/vue.js"></script>
+    <script src="../_static/pythonpad.bundle.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -937,10 +939,7 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/gen/D_8_ Objet _ définition d'une méthode d'instance.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="../_sources/gen/D_8_ Objet _ définition d'une méthode d'instance.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -962,26 +961,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/rtavenar/exos_python/master?urlpath=tree/book/gen/D_8_ Objet _ définition d'une méthode d'instance.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -1000,11 +979,6 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#aide">
    Aide
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#squelette">
-   Squelette
   </a>
  </li>
 </ul>
@@ -1028,17 +1002,8 @@
 <div class="section" id="aide">
 <h2>Aide<a class="headerlink" href="#aide" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes">https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes</a></p>
-</div>
-<div class="section" id="squelette">
-<h2>Squelette<a class="headerlink" href="#squelette" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Écrire votre code ci-dessous</span>
-<span class="c1"># </span>
-</pre></div>
-</div>
-</div>
-</div>
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Écrire votre code ci-dessous\n'})</script>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Cliquez ici pour voir la solution</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Écrire votre code ci-dessous</span>

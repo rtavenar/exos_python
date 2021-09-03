@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 5.3. Chaînes de caractères : deux moitiés
 
 ## Consignes
@@ -36,16 +24,9 @@ https://rtavenar.github.io/poly_python/content/intro.html#les-cha%C3%AEnes-de-ca
 
 https://docs.python.org/fr/3.6/library/stdtypes.html#common-sequence-operations
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire une chaîne de caractères :\n# s = input()\n# Afficher une chaîne de caractères :\n# print(s)\n'})</script>
 
-```{code-cell} ipython3
-
-# Lire une chaîne de caractères :
-# s = input()
-# Afficher une chaîne de caractères :
-# print(s)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

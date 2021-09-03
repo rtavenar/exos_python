@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # D.7. Objet : définition d'une classe et de son initialisateur
 
 ## Consignes
@@ -20,13 +8,9 @@ kernelspec:
 
 https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Écrire votre code ci-dessous\n'})</script>
 
-```{code-cell} ipython3
-
-# Écrire votre code ci-dessous
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown

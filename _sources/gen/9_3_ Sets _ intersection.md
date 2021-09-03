@@ -1,15 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # 9.3. Sets : intersection
 
 ## Consignes
@@ -33,16 +21,9 @@ kernelspec:
 
 https://docs.python.org/fr/3.6/library/stdtypes.html#set-types-set-frozenset
 
-## Squelette
+<div id="pad"></div>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire une chaîne de caractères au clavier :\n# s = input()\n# Afficher la valeur de s :\n# print(s)\n'})</script>
 
-```{code-cell} ipython3
-
-# Lire une chaîne de caractères au clavier :
-# s = input()
-# Afficher la valeur de s :
-# print(s)
-# 
-```
 
 ````{admonition} Cliquez ici pour voir la solution
 :class: tip, dropdown
