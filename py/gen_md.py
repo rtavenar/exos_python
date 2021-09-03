@@ -18,16 +18,17 @@ def comment_code(code):
             output_code += line + "\n"
     return output_code
 
-def format_code(code_skeleton, code_sol, title_level=2):
+def format_code(code_skeleton, code_sol):
     s = "\n\n"
     
-    s += ("#" * title_level) + " Squelette\n\n"
-    s += "```{code-cell} ipython3\n\n"
-    # s += "```python\n"
-    s += comment_code(code_skeleton)
-    if not s.endswith("\n"):
-        s += "\n"
-    s += "```\n\n"
+    json_str = str(
+        {
+            "title": "Testez votre solution ici",
+            "src": code_skeleton
+        }
+    )
+    s += """<div id="pad"></div>
+            <script>Pythonpad('pad', %s)</script>\n\n\n""" % json_str
     
     s += "````{admonition} Cliquez ici pour voir la solution\n:class: tip, dropdown\n\n"
     s += "```python\n"
@@ -124,10 +125,10 @@ def gen_content(input_folder):
     # Generate output
     fp = open(output_fname, "w")
     
-    fp.write(myst_header())
+    # fp.write(myst_header())
     fp.write(f"# {title}\n\n")
     fp.write(instructions)
-    fp.write(format_code(skeleton, sol, title_level=2))
+    fp.write(format_code(skeleton, sol))
     
     fp.close()
 
