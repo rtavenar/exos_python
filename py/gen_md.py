@@ -18,15 +18,24 @@ def comment_code(code):
             output_code += line + "\n"
     return output_code
 
-def format_code(code_skeleton, code_sol):
+def format_code(code_skeleton, code_sol, files):
     s = "\n\n"
-    
-    json_str = str(
-        {
-            "title": "Testez votre solution ici",
-            "src": code_skeleton
-        }
-    )
+
+    if len(files) == 0:
+        json_str = str(
+            {
+                "title": "Testez votre solution ici",
+                "src": code_skeleton
+            }
+        )
+    else:
+        json_str = str(
+            {
+                "title": "Testez votre solution ici",
+                "src": code_skeleton,
+                "files": include_files(files)
+            }
+        )
     s += """<div id="pad"></div>
             <script>Pythonpad('pad', %s)</script>\n\n\n""" % json_str
     
@@ -36,7 +45,7 @@ def format_code(code_skeleton, code_sol):
     if not s.endswith("\n"):
         s += "\n"
     s += "```\n````\n"
-    
+
     return s
 
 
@@ -128,7 +137,7 @@ def gen_content(input_folder):
     # fp.write(myst_header())
     fp.write(f"# {title}\n\n")
     fp.write(instructions)
-    fp.write(format_code(skeleton, sol))
+    fp.write(format_code(skeleton, sol, found_files(input_folder)))
     
     fp.close()
 
@@ -149,6 +158,27 @@ def write_toc(list_content_files):
                 sub_name = fname[5:].replace(':', '\\:')
                 fp.write(f"    - file: {sub_name}\n")
     fp.close()
+
+
+def found_files(input_folder):
+    #listing des fichiers du dossier input_folder
+    files = [f for f in os.listdir(input_folder) if os.path.isfile(os.path.join(input_folder, f))]
+    #suppression des fichiers main.py instructions.md et unit-tests.json de la liste
+    files = [os.path.join(input_folder, f) for f in files if f not in ["main.py", "instructions.md", "unit-tests.json"]]
+    return files
+
+
+def include_files(files):
+    dict_files = {}
+    for f in files:
+        dict_files.update({os.path.basename(f): {
+                    "type": "text",
+                    "body": read_file(f)}})
+    return dict_files
+
+def read_file(file):
+    with open(file, "r") as f:
+        return f.read()
 
 if __name__ == "__main__":
     list_output_files = []
