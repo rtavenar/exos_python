@@ -21,7 +21,7 @@ print(nb_non_vides("a.csv"))
 https://rtavenar.github.io/poly_python/content/fichiers.html
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'import csv\n\ndef nb_non_vides(nom_du_fichier):\n  # Codez votre fonction ici et modifiez la valeur de retour si besoin\n  return None\n'})</script>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'import csv\n\ndef nb_non_vides(nom_du_fichier):\n  # Codez votre fonction ici et modifiez la valeur de retour si besoin\n  return None\n', 'files': {'b.csv': {'type': 'text', 'body': '1;2;3\n4;5;6\n7;8;9\n10,10'}, 'a.csv': {'type': 'text', 'body': '12;7;8;9\n1;3;\n0;;0'}}})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution
