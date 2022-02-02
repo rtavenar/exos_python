@@ -15,6 +15,7 @@
 * Ajouter un historique des exercices faits / pas faits / partiellement faits en utilisant le `localStorage` en JS
 * Avoir aussi un historique du code produit (toujours avec le `localStorage` ?)
 * Avoir un meilleur rendu visuel des blocs dans lequels on code et notamment vérifier que ça passe bien sur tablette
+* Implémenter les unit tests pour tester automatiquement une solution proposée
 * Revoir un peu les exercices
 * Question : comment implémenter ces améliorations ?
   * Option 1 : on s'y met à 3 sur qqs jours et on avance le + possible
