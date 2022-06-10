@@ -3,6 +3,9 @@ import json
 
 
 def replace_urls(text):
+    """Applique les changements d'URLs spécifiés dans le fichier 
+    `py/change_urls.json` pour pointer vers les bonnes sections du poly.
+    """
     target_urls = json.load(open("py/change_urls.json", "r"))
     for modif in target_urls:
         text = text.replace(modif["source"], modif["target"])
@@ -10,6 +13,9 @@ def replace_urls(text):
 
 
 def comment_code(code):
+    """Commente toutes les lignes de la chaîne `code` en les débutant 
+    par un symbole `#` si ce n'est pas déjà le cas.
+    """
     output_code = ""
     for line in code.split("\n"):
         if not line.startswith("#"):
@@ -19,6 +25,9 @@ def comment_code(code):
     return output_code
 
 def format_code(code_skeleton, code_sol, files):
+    """Traduit un squelette et une solution proposée en code HTML permettant
+    de présenter le squelette dans un encadré Pythonpad et la solution dans une
+    section caché que l'on peut afficher."""
     s = "\n\n"
 
     if len(files) == 0:
@@ -50,6 +59,9 @@ def format_code(code_skeleton, code_sol, files):
 
 
 def read_instructions(fname_instructions, title_level_increment=0):
+    """Lit les instructions contenues dans un fichier Markdown récupéré 
+    depuis l'export repl.it et les met en forme pour les besoins de 
+    notre Jupyter Book."""
     instructions = []
     for line in open(fname_instructions, "r").readlines():
         if line.startswith("#"):
@@ -63,12 +75,30 @@ def read_instructions(fname_instructions, title_level_increment=0):
 
 
 def get_title(input_folder):
+    """Récupère le nom de la section à partir du répertoire dans 
+    lequel se trouvent les données repl.it correspondantes.
+    
+    Exemple
+    -------
+    
+    >>> get_title("data/3.F. If/else: Échecs : mouvement du roi")
+    '3.F. If/else: Échecs : mouvement du roi'
+    """
     str_base_folder = "data/"
     pos = input_folder.find(str_base_folder) + len(str_base_folder)
     return input_folder[pos:]
 
 
 def get_output_fname(input_folder):
+    """Génère le nom du répertoire de sortie à partir du répertoire dans 
+    lequel se trouvent les données repl.it correspondantes.
+    
+    Exemple
+    -------
+    
+    >>> get_output_fname("data/3.F. If/else: Échecs : mouvement du roi")
+    'book/gen/3_F_ If_else_ Échecs _ mouvement du roi.md'
+    """
     title = get_title(input_folder)
     title = title.replace("/", "_").replace(":", "_")
     title = title.replace(".", "_")
@@ -76,6 +106,15 @@ def get_output_fname(input_folder):
 
 
 def get_full_path(partial_path):
+    """Retourne le chemin vers le répertoire contenant le fichier d'instructions 
+    à partir d'un nom de répertoire de base.
+    
+    Exemple
+    -------
+    
+    >>> get_full_path("data/3.F. If/else: Échecs : mouvement du roi")
+    'data/3.F. If/else: Échecs : mouvement du roi'
+    """
     if os.path.exists(os.path.join(partial_path, "instructions.md")):
         return partial_path
     subdirs = [
@@ -88,6 +127,8 @@ def get_full_path(partial_path):
 
 
 def list_exercises(path="data/"):
+    """Retourne la liste des exercices trouvés dans le répertoire `data/` 
+    issu de l'export repl.it"""
     return [
         os.path.join(path, subpath)
         for subpath in os.listdir(path)
@@ -96,6 +137,9 @@ def list_exercises(path="data/"):
     
 
 def myst_header():
+    """Retourne le header nécessaire pour nos fichiers pour une 
+    intégration dans Jupyter Book."""
+    
     return """---
 jupytext:
   formats: md:myst
@@ -111,6 +155,9 @@ kernelspec:
 """
 
 def gen_content(input_folder):
+    """Fonction principale qui, à partir d'un répertoire de données issu
+    de l'export repl.it, génère le contenu au format attendu par Jupyter Book.
+    """
     title = get_title(input_folder)
     output_fname = get_output_fname(input_folder)
     
@@ -143,6 +190,8 @@ def gen_content(input_folder):
 
 
 def write_toc(list_content_files):
+    """Construit le fichier YAML de table des matières à partir des sous-parties
+    listées dans `py/parts.json` et de la liste des fichiers fournie en argument."""
     toc_chapters = json.load(open("py/parts.json", "r"))
     sorted_content_files = sorted(list_content_files)
     
@@ -161,10 +210,20 @@ def write_toc(list_content_files):
 
 
 def found_files(input_folder):
+    """Liste tous les fichiers d'un répertoire à l'exception des fichiers 
+    "main.py", "instructions.md", "unit-tests.json".
+    Cette fonction est utilisée pour lister les fichiers de données nécessaires 
+    aux exercices de la section C. 
+    
+    Exemple
+    -------
+    >>> sorted(found_files("data/C.1 Fichiers : les fichiers texte plat"))
+    ['data/C.1 Fichiers : les fichiers texte plat/a.txt', 'data/C.1 Fichiers : les fichiers texte plat/b.txt']
+    """
     #listing des fichiers du dossier input_folder
     files = [f for f in os.listdir(input_folder) if os.path.isfile(os.path.join(input_folder, f))]
     #suppression des fichiers main.py instructions.md et unit-tests.json de la liste
-    files = [os.path.join(input_folder, f) for f in files if f not in ["main.py", "instructions.md", "unit-tests.json"]]
+    files = [os.path.join(input_folder, f) for f in files if f not in ["main.py", "instructions.md", "unit-tests.json"] and not f.startswith(".")]
     return files
 
 
