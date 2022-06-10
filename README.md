@@ -12,7 +12,11 @@
 
 ## TODO list
 
-* Ajouter un historique des exercices faits / pas faits / partiellement faits en utilisant le `localStorage` en JS
+* Ajouter un historique des exercices faits / pas faits / partiellement faits en utilisant le `localStorage` en JS. Peut se faire en :
+  1. regardant pour quels exercices il y a une entrée du type "Pythonpad-save-files-C.2" dans le `localStorage`
+  2. Parmi ceux-là, pour lesquels il y a un fichier `.passed.json` dans les fichiers listés dans le dictionnaire en question
+  3. Afficher une icone simple verte disant que c'est fait (en utilisant https://fontawesome.com/v5/icons/check?style=solid&s=solid ?)
+  4. On pourrait même avoir une icone orange pour les exercices en cours : ce sont ceux pour lesquels il y a une entrée "Pythonpad-save-src-C.2" dans le `localStorage`
 * Vérifier le rendu visuel des blocs dans lequels on code sur plusieurs supports
 * Implémenter les unit tests pour tester automatiquement une solution proposée
   * OK pour les unit tests, reste les input-output-matching
