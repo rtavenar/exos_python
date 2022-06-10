@@ -1,3 +1,8 @@
 div#pad {
-    height: 40em;
+    font-size: 12px;
+    height: 100vh;
+}
+
+.CodeMirror pre.CodeMirror-line {
+    box-shadow: unset;
 }

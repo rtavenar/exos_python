@@ -13,7 +13,7 @@
 ## TODO list
 
 * Ajouter un historique des exercices faits / pas faits / partiellement faits en utilisant le `localStorage` en JS
-* Avoir un meilleur rendu visuel des blocs dans lequels on code et notamment vérifier que ça passe bien sur tablette
+* Vérifier le rendu visuel des blocs dans lequels on code sur plusieurs supports
 * Implémenter les unit tests pour tester automatiquement une solution proposée
   * OK pour les unit tests, reste les input-output-matching
 * Revoir un peu les exercices
