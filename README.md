@@ -17,6 +17,7 @@
   * existe déjà dans l'éditeur
   * mais il faudrait retenir un code par page et non un code pour tout le site
 * Avoir un meilleur rendu visuel des blocs dans lequels on code et notamment vérifier que ça passe bien sur tablette
+* Gestion des fichiers : la version actuelle ne semble pas rendre les fichiers visibles
 * Implémenter les unit tests pour tester automatiquement une solution proposée
 * Revoir un peu les exercices
 * Question : comment implémenter ces améliorations ?
