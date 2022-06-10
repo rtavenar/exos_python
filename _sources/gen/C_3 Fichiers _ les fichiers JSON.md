@@ -21,7 +21,7 @@ print(compte_cles_prefixe("a.json", "abc"))
 https://rtavenar.github.io/poly_python/content/fichiers.html
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'import json\n\ndef compte_cles_prefixe(nom_du_fichier, prefixe):\n  # Codez votre fonction ici et modifiez sa valeur de retour si besoin\n  return None\n', 'files': {'a.json': {'type': 'text', 'body': '{\n  "abd": 12,\n  "abcdef": 1,\n  "cv": {\n    "abcd": 3\n  },\n  "abc": 2\n}'}, 'b.json': {'type': 'text', 'body': '{\n  "abcd": 12,\n  "abcdef": 1,\n  "cv": {\n    "abcd": 3\n  },\n  "abc": 2\n}'}}})</script>
+            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'import json\n\ndef compte_cles_prefixe(nom_du_fichier, prefixe):\n  # Codez votre fonction ici et modifiez sa valeur de retour si besoin\n  return None\n', 'files': {'b.json': {'type': 'text', 'body': '{\n  "abcd": 12,\n  "abcdef": 1,\n  "cv": {\n    "abcd": 3\n  },\n  "abc": 2\n}'}, 'a.json': {'type': 'text', 'body': '{\n  "abd": 12,\n  "abcdef": 1,\n  "cv": {\n    "abcd": 3\n  },\n  "abc": 2\n}'}}})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution
