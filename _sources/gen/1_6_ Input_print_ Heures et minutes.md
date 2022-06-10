@@ -27,7 +27,7 @@ Par exemple, si N = 3900, alors 3900 secondes se sont écoulées depuis minuit (
 https://rtavenar.github.io/poly_python/content/intro.html
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '1.6.', 'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

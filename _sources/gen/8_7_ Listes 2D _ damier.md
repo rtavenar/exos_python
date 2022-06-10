@@ -30,7 +30,7 @@ https://docs.python.org/fr/3.6/tutorial/datastructures.html#list-comprehensions
 https://docs.python.org/fr/3.6/tutorial/datastructures.html#nested-list-comprehensions
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': "# Lire une liste d'entiers :\n# a = [int(s) for s in input().split()]\n# Afficher la valeure de a :\n# print(a)\n"})</script>
+            <script>Pythonpad('pad', {'id': '8.7.', 'title': 'Testez votre solution ici', 'src': "# Lire une liste d'entiers :\n# a = [int(s) for s in input().split()]\n# Afficher la valeure de a :\n# print(a)\n"})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

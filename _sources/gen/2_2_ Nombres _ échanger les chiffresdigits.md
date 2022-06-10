@@ -21,7 +21,7 @@
 https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operations
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '2.2.', 'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

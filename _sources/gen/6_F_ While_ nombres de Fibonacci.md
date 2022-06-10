@@ -27,7 +27,7 @@ Les nombres de Fibonacci sont les nombres de la suite d'entiers commençant par 
 https://docs.python.org/fr/3.6/reference/compound_stmts.html#the-while-statement
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier au clavier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '6.F.', 'title': 'Testez votre solution ici', 'src': '# Lire un entier au clavier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

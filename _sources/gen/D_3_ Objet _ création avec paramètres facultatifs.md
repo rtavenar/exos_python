@@ -9,7 +9,7 @@
 https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'class Cercle:\n  def __init__(self, r=15, posX=0, posY=0):\n    self.rayon = r\t\t# attribut rayon du cercle\n    self.x = posX\t\t\t# attribut position en X du centre du cercle\n    self.y = posY\t\t\t# attribut position en Y du centre du cercle\n\n# Écrire votre code ci-dessous\n'})</script>
+            <script>Pythonpad('pad', {'id': 'D.3.', 'title': 'Testez votre solution ici', 'src': 'class Cercle:\n  def __init__(self, r=15, posX=0, posY=0):\n    self.rayon = r\t\t# attribut rayon du cercle\n    self.x = posX\t\t\t# attribut position en X du centre du cercle\n    self.y = posY\t\t\t# attribut position en Y du centre du cercle\n\n# Écrire votre code ci-dessous\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

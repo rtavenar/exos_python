@@ -24,7 +24,7 @@ Vous êtes un athlète qui se prépare pour une course. Le premier jour de votre
 https://rtavenar.github.io/poly_python/content/struct.html#boucles-while
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '6.4.', 'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

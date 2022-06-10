@@ -30,7 +30,7 @@ https://docs.python.org/fr/3/reference/compound_stmts.html#for
 https://docs.python.org/fr/3/library/functions.html#print
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '4.A.', 'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

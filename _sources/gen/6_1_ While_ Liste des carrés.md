@@ -21,7 +21,7 @@ Pour un entier N donné, affichez (dans l'ordre) tous les carrés d'entiers posi
 https://rtavenar.github.io/poly_python/content/struct.html#boucles-while
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '6.1.', 'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

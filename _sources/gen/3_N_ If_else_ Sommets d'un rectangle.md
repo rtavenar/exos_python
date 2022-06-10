@@ -50,7 +50,7 @@ les 3 sommets sont (1, 5), (7, 5), (1, 10)
 https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher une valeur :\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '3.N.', 'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher une valeur :\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

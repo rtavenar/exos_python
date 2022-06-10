@@ -11,7 +11,7 @@ Ajouter à la classe Personne une méthode d'instance nommée "`imc`" permettant
 https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Écrire votre code ci-dessous\n'})</script>
+            <script>Pythonpad('pad', {'id': 'D.8.', 'title': 'Testez votre solution ici', 'src': '# Écrire votre code ci-dessous\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

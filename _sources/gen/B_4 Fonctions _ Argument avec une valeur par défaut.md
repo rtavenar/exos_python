@@ -21,7 +21,7 @@ somme(1,2,3)
 https://rtavenar.github.io/poly_python/content/struct.html#fonctions
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': 'def somme():\n  # Codez votre fonction ici'})</script>
+            <script>Pythonpad('pad', {'id': 'B.4', 'title': 'Testez votre solution ici', 'src': 'def somme():\n  # Codez votre fonction ici'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

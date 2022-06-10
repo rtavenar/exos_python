@@ -23,7 +23,7 @@ https://rtavenar.github.io/poly_python/content/listes.html
 https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read a list of integers:\n# a = [int(s) for s in input().split()]\n# Print a value:\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '7.9.', 'title': 'Testez votre solution ici', 'src': '# Read a list of integers:\n# a = [int(s) for s in input().split()]\n# Print a value:\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

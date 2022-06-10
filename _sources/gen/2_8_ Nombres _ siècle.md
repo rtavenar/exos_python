@@ -28,7 +28,7 @@ You may also try step-by-step theory chunks:
 https://snakify.org/lessons/integer_float_numbers/steps/1/
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
+            <script>Pythonpad('pad', {'id': '2.8.', 'title': 'Testez votre solution ici', 'src': '# Read an integer:\n# a = int(input())\n# Print a value:\n# print(a)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

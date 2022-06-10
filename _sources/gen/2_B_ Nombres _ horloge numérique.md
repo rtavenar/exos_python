@@ -26,7 +26,7 @@ Par exemple, si _N = 150_, alors 150 minutes se sont déroulées depuis minuit, 
 https://docs.python.org/fr/3/reference/expressions.html#binary-arithmetic-operations
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)'})</script>
+            <script>Pythonpad('pad', {'id': '2.B.', 'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher la valeur de a :\n# print(a)'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

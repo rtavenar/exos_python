@@ -28,7 +28,7 @@ HELP
 https://docs.python.org/fr/3.6/library/stdtypes.html#set-types-set-frozenset
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire une chaîne de caractères au clavier :\n# s = input()\n# Afficher la valeur de s :\n# print(s)\n'})</script>
+            <script>Pythonpad('pad', {'id': '9.5.', 'title': 'Testez votre solution ici', 'src': '# Lire une chaîne de caractères au clavier :\n# s = input()\n# Afficher la valeur de s :\n# print(s)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

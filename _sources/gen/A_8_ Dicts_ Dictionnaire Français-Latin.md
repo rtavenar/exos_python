@@ -30,7 +30,7 @@ pomum - pomme
 https://rtavenar.github.io/poly_python/content/dict.htmlhttps://docs.python.org/fr/3/tutorial/datastructures.html#dictionaries
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read a string:\n# s = input()\n# Print a value:\n# print(s)\n'})</script>
+            <script>Pythonpad('pad', {'id': 'A.8.', 'title': 'Testez votre solution ici', 'src': '# Read a string:\n# s = input()\n# Print a value:\n# print(s)\n'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

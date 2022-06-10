@@ -33,7 +33,7 @@ NON
 https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher une valeur :\n# print(a)'})</script>
+            <script>Pythonpad('pad', {'id': '3.7.', 'title': 'Testez votre solution ici', 'src': '# Lire un entier :\n# a = int(input())\n# Afficher une valeur :\n# print(a)'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution

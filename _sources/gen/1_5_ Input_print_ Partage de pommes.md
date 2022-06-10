@@ -28,7 +28,7 @@ https://rtavenar.github.io/poly_python/content/intro.html
 https://docs.python.org/fr/3/tutorial/inputoutput.html
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'title': 'Testez votre solution ici', 'src': '# Read the numbers like this:\n# n = int(input())\n\n# Print the result with print()\n\n# Example of division, integer division and remainder:\nprint(63 / 5)\nprint(63 // 5)\nprint(63 % 5)'})</script>
+            <script>Pythonpad('pad', {'id': '1.5.', 'title': 'Testez votre solution ici', 'src': '# Read the numbers like this:\n# n = int(input())\n\n# Print the result with print()\n\n# Example of division, integer division and remainder:\nprint(63 / 5)\nprint(63 // 5)\nprint(63 % 5)'})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution
