@@ -9,7 +9,7 @@
 https://docs.python.org/fr/3.6/tutorial/classes.html#a-first-look-at-classes
 
 <div id="pad"></div>
-            <script>Pythonpad('pad', {'id': 'D.4.', 'title': 'Testez votre solution ici', 'src': "from math import pi\n\nclass Cercle:\n  def __init__(self, r=15, posX=0, posY=0):\n    self.rayon = r\t\t# attribut rayon du cercle\n    self.x = posX\t\t\t# attribut position en X du centre du cercle\n    self.y = posY\t\t\t# attribut position en Y du centre du cercle\n\n# Écrire votre code ci-dessous\n# Le périmètre d'un cercle de rayon R est égal à 2*pi*R\n\n"})</script>
+            <script>Pythonpad('pad', {'id': 'D.4.', 'title': 'Testez votre solution ici', 'src': "from math import pi\n\nclass Cercle:\n  def __init__(self, r=15, posX=0, posY=0):\n    self.rayon = r\t\t# attribut rayon du cercle\n    self.x = posX\t\t\t# attribut position en X du centre du cercle\n    self.y = posY\t\t\t# attribut position en Y du centre du cercle\n\n# Écrire votre code ci-dessous\n# Le périmètre d'un cercle de rayon R est égal à 2*pi*R\n\n", 'files': {'.grader.py': {'type': 'text', 'body': 'import unittest\n\nclass TestExercise(unittest.TestCase):\n    def test_all(self):\n        self.assertIsInstance(monCercle, object)\n\nif __name__ == \'__main__\':\n    try:\n        from main import *\n    except:\n        print("Le code fourni n\'est pas valide")\n    suite = unittest.TestLoader().loadTestsFromTestCase(TestExercise)\n    output = unittest.TextTestRunner(verbosity=2).run(suite)\n\n    if output.wasSuccessful():\n        f = open(\'.passed.json\', \'w\')\n        f.close()\n        print(\'Bravo ! Le code fourni a passé les tests avec succès, il semble valide !\')'}}})</script>
 
 
 ````{admonition} Cliquez ici pour voir la solution
