@@ -24,7 +24,7 @@ def comment_code(code):
             output_code += line + "\n"
     return output_code
 
-def format_code(code_skeleton, code_sol, files):
+def format_code(code_skeleton, code_sol, files, problem_id):
     """Traduit un squelette et une solution proposée en code HTML permettant
     de présenter le squelette dans un encadré Pythonpad et la solution dans une
     section caché que l'on peut afficher."""
@@ -33,6 +33,7 @@ def format_code(code_skeleton, code_sol, files):
     if len(files) == 0:
         json_str = str(
             {
+                "id": problem_id,
                 "title": "Testez votre solution ici",
                 "src": code_skeleton
             }
@@ -40,6 +41,7 @@ def format_code(code_skeleton, code_sol, files):
     else:
         json_str = str(
             {
+                "id": problem_id,
                 "title": "Testez votre solution ici",
                 "src": code_skeleton,
                 "files": include_files(files)
@@ -184,7 +186,8 @@ def gen_content(input_folder):
     # fp.write(myst_header())
     fp.write(f"# {title}\n\n")
     fp.write(instructions)
-    fp.write(format_code(skeleton, sol, found_files(input_folder)))
+    ex_id = title[:title.find(" ")]
+    fp.write(format_code(skeleton, sol, found_files(input_folder), ex_id))
     
     fp.close()
 
