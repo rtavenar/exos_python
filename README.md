@@ -12,13 +12,13 @@
 
 ## TODO list
 
-* ~~Ajouter un historique des exercices faits / pas faits / partiellement faits en utilisant le `localStorage` en JS.~~
+* Ajouter un historique des exercices faits / pas faits / partiellement faits en utilisant le `localStorage` en JS.
+  * OK, mais on pourrait améliorer
+    * les ticks n'apparaissent qu'au chargement de la page (pas quand on sauve / grade notre code)
+    * ajouter un tick par catégorie d'exercices
 * Vérifier le rendu visuel des blocs dans lequels on code sur plusieurs supports
 * Implémenter les unit tests pour tester automatiquement une solution proposée
   * OK pour les unit tests, reste les input-output-matching
 * Revoir un peu les exercices
-* Question : comment implémenter ces améliorations ?
-  * Option 1 : on s'y met à 3 sur qqs jours et on avance le + possible
-  * Option 2 : on le propose comme projet extra-scolaire à un petit groupe d'étudiants triés sur le volet
-  * Option 3 : on fait une sorte de hackathon, impliquant possiblement des étudiants, profs, etc, et qui soit ouvert à de plus larges améliorations
+
   
