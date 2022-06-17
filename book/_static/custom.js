@@ -11,6 +11,15 @@ function basename (path) {
     return path.substring(path.lastIndexOf('/') + 1)
 }
 
+function all_elements_equal_to_val(arr, val) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] != val) {
+            return false;
+        }
+    }
+    return true;
+}
+
 function add_ticks() {
     const html_code_tick_vert = 
     '<svg role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z" fill="#28a745" stroke="#28a745"></path></svg>';
@@ -36,18 +45,51 @@ function add_ticks() {
     }
 
     var elements = document.getElementsByClassName("reference internal");
+    var parentElements = {};
     for (let item of elements) {
         let href_attribute = item.getAttribute("href");
         if (href_attribute == "#") {
             href_attribute = basename(window.location.href);
         }
+        if(href_attribute[1] == ".") {
+            if (href_attribute != "../index.html") {
+                parentElements[href_attribute.slice(0, 2)] = Array();
+            }
+            continue;
+        }
+        if(href_attribute[0] == "#") {
+            continue;
+        }
         let innerHTML = item.innerHTML.replace(html_code_tick_vert, "").replace(html_code_tick_orange, "");
         if(is_in_preffix_list(href_attribute, list_passed)) {
             item.innerHTML = innerHTML + ' ' + html_code_tick_vert;
+            parentElements[href_attribute.slice(0, 2).replace("_", ".")].push("vert");
         } else if(is_in_preffix_list(href_attribute, list_en_cours)) {
             item.innerHTML = innerHTML + ' ' + html_code_tick_orange;
+            parentElements[href_attribute.slice(0, 2).replace("_", ".")].push("orange");
         } else {
             item.innerHTML = innerHTML;
+            parentElements[href_attribute.slice(0, 2).replace("_", ".")].push("blanc");
+        }
+    }
+    console.log(parentElements);
+    for (let item of elements) {
+        let href_attribute = item.getAttribute("href");
+        if (href_attribute == "#") {
+            href_attribute = basename(window.location.href);
+        }
+        if(href_attribute[1] == ".") {
+            if (href_attribute != "../index.html") {
+                let key = href_attribute.slice(0, 2);
+                let innerHTML = item.innerHTML.replace(html_code_tick_vert, "").replace(html_code_tick_orange, "");
+                if(all_elements_equal_to_val(parentElements[key], "vert")) {
+                    item.innerHTML = innerHTML + ' ' + html_code_tick_vert;
+                } else if(all_elements_equal_to_val(parentElements[key], "blanc")) {
+                    item.innerHTML = innerHTML;
+                } else {
+                    item.innerHTML = innerHTML + ' ' + html_code_tick_orange;
+                }
+            }
         }
     }
 }

@@ -13,12 +13,11 @@
 ## TODO list
 
 * Ajouter un historique des exercices faits / pas faits / partiellement faits en utilisant le `localStorage` en JS.
-  * OK, mais on pourrait améliorer
-    * les ticks n'apparaissent qu'au chargement de la page (pas quand on sauve / grade notre code)
-    * ajouter un tick par catégorie d'exercices
+  * OK, mais on pourrait améliorer le déclenchement du add_ticks
 * Vérifier le rendu visuel des blocs dans lequels on code sur plusieurs supports
 * Implémenter les unit tests pour tester automatiquement une solution proposée
   * OK pour les unit tests, reste les input-output-matching
+* suivre le problème des input dans pythonpad
 * Revoir un peu les exercices
 
   
