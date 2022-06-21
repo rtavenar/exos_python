@@ -24,7 +24,7 @@ def comment_code(code):
             output_code += line + "\n"
     return output_code
 
-def format_code(code_skeleton, code_sol, files, problem_id, unit_test_file=None):
+def format_code(code_skeleton, code_sol, files, problem_id, unit_test_file=None, io_test_folder=None):
     """Traduit un squelette et une solution proposée en code HTML permettant
     de présenter le squelette dans un encadré Pythonpad et la solution dans une
     section caché que l'on peut afficher."""
@@ -42,24 +42,7 @@ def format_code(code_skeleton, code_sol, files, problem_id, unit_test_file=None)
             unit_test_contents = json.load(fp)
             unit_test_code = unit_test_contents["tests"][0]["code"].split("\n")
             
-            content_ut = """import unittest
-
-class TestExercise(unittest.TestCase):
-    def test_all(self):
-        {}
-
-if __name__ == '__main__':
-    try:
-        from main import *
-    except:
-        print("Le code fourni n'est pas valide")
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestExercise)
-    output = unittest.TextTestRunner(verbosity=2).run(suite)
-
-    if output.wasSuccessful():
-        f = open('.passed.json', 'w')
-        f.close()
-        print('Bravo ! Le code fourni a passé les tests avec succès, il semble valide !')""".format("\n        ".join(unit_test_code))
+            content_ut = open(os.path.join("py", "unittest_template.py"), "r").read().format("\n        ".join(unit_test_code))
             
             json_content["files"] = json_content.get("files", {})
             json_content["files"].update(
@@ -70,6 +53,19 @@ if __name__ == '__main__':
                     }
                 }
             )
+    # Below is commented out for now since input() is blocked by PythonPad
+    # elif io_test_folder is not None:
+    #     content_ut = open(os.path.join("py", "io_test_template.py"), "r").read()
+    #     json_content["files"] = json_content.get("files", {})
+    #     json_content["files"].update(
+    #         {
+    #             ".grader.py": {
+    #                 "type": "text",
+    #                 "body": content_ut
+    #             }
+    #         }
+    #     )
+        
     
     json_str = str(json_content)
     s += """<div id="pad"></div>
@@ -216,9 +212,12 @@ def gen_content(input_folder):
     fname_unit_test = os.path.join(input_folder, "unit-tests.json")
     if not os.path.exists(fname_unit_test):
         fname_unit_test = None
+    path_io_test = os.path.join(input_folder, "input-output-matching")
+    if not os.path.exists(path_io_test):
+        path_io_test = None
     fp.write(
         format_code(skeleton, sol, found_files(input_folder), ex_id,
-                    unit_test_file=fname_unit_test)
+                    unit_test_file=fname_unit_test, io_test_folder=path_io_test)
     )
     
     fp.close()
