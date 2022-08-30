@@ -1,5 +1,6 @@
 import os
 import json
+import jupytext
 
 
 def replace_urls(text):
@@ -26,9 +27,9 @@ def comment_code(code):
 
 def format_code(code_skeleton, code_sol, files, problem_id, unit_test_file=None, io_test_folder=None):
     """Traduit un squelette et une solution proposée en code HTML permettant
-    de présenter le squelette dans un encadré Pythonpad et la solution dans une
-    section caché que l'on peut afficher."""
-    s = "\n\n"
+    de présenter le squelette dans une cellule de code et la solution dans une
+    section cachée que l'on peut afficher."""
+    s = "\n\n## Codez dans la cellule ci-dessous\n\n"
 
     json_content = {
         "id": problem_id,
@@ -68,15 +69,14 @@ def format_code(code_skeleton, code_sol, files, problem_id, unit_test_file=None,
         
     
     json_str = str(json_content)
-    s += """<div id="pad"></div>
-            <script>Pythonpad('pad', %s)</script>\n\n\n""" % json_str
+    s += """```{code-cell} ipython3\n\n%s\n```\n\n""" % code_skeleton
     
-    s += "````{admonition} Cliquez ici pour voir la solution\n:class: tip, dropdown\n\n"
+    s += "<details><summary>Cliquez ici pour voir la solution</summary>\n\n"
     s += "```python\n"
     s += code_sol
     if not s.endswith("\n"):
         s += "\n"
-    s += "```\n````\n"
+    s += "```\n</details>\n"
 
     return s
 
@@ -120,12 +120,12 @@ def get_output_fname(input_folder):
     -------
     
     >>> get_output_fname("data/3.F. If/else: Échecs : mouvement du roi")
-    'book/gen/3_F_ If_else_ Échecs _ mouvement du roi.md'
+    'book/gen/3_F_ If_else_ Échecs _ mouvement du roi.ipynb'
     """
     title = get_title(input_folder)
     title = title.replace("/", "_").replace(":", "_")
     title = title.replace(".", "_")
-    return os.path.join("book", "gen", title + ".md")
+    return os.path.join("book", "gen", title + ".ipynb")
 
 
 def get_full_path(partial_path):
@@ -202,25 +202,28 @@ def gen_content(input_folder):
     sol = open(fname_sol, "r").read()
     
     # Generate output
-    fp = open(output_fname, "w")
+    # fp = open(output_fname, "w")
     
     # fp.write(myst_header())
-    fp.write(f"# {title}\n\n")
-    fp.write(instructions)
+    # fp.write(f"# {title}\n\n")
+    # fp.write(instructions)
     ex_id = title[:title.find(" ")]
     
-    fname_unit_test = os.path.join(input_folder, "unit-tests.json")
-    if not os.path.exists(fname_unit_test):
-        fname_unit_test = None
-    path_io_test = os.path.join(input_folder, "input-output-matching")
-    if not os.path.exists(path_io_test):
-        path_io_test = None
-    fp.write(
-        format_code(skeleton, sol, found_files(input_folder), ex_id,
-                    unit_test_file=fname_unit_test, io_test_folder=path_io_test)
-    )
-    
-    fp.close()
+    # fname_unit_test = os.path.join(input_folder, "unit-tests.json")
+    # if not os.path.exists(fname_unit_test):
+    #     fname_unit_test = None
+    # path_io_test = os.path.join(input_folder, "input-output-matching")
+    # if not os.path.exists(path_io_test):
+    #     path_io_test = None
+    # fp.write(
+    #     format_code(skeleton, sol, found_files(input_folder), ex_id,
+    #                 unit_test_file=fname_unit_test, io_test_folder=path_io_test)
+    # )
+    s = myst_header() + f"# {title}\n\n" + instructions + format_code(skeleton, sol, found_files(input_folder), ex_id,
+                    unit_test_file=None, io_test_folder=None)
+    notebook_content = jupytext.reads(s, fmt='md')
+    jupytext.write(notebook_content, output_fname.replace(".md", ".ipynb"))
+    # fp.close()
 
 
 def write_toc(list_content_files):
@@ -229,17 +232,15 @@ def write_toc(list_content_files):
     toc_chapters = json.load(open("py/parts.json", "r"))
     sorted_content_files = sorted(list_content_files)
     
-    fp = open("book/_toc.yml", "w")
-    fp.write("format: jb-book\nroot: index\nchapters:\n")
+    s = "# S'entraîner à coder en Python\n\n"
     for chap in toc_chapters:
-        fname_chap = "gen/" + chap['preffix'] + " " + chap['title'].replace("/", "_") + ".md"
-        open("book/" + fname_chap, "w").write(f"# {chap['preffix']} {chap['title']}\n\n{chap.get('text', '')}")
-        fp.write(f"  - file: {fname_chap}\n")
-        fp.write("    sections:\n")
-        for fname in sorted_content_files:
+        s += f"\n\n## {chap['preffix']} {chap['title']}\n\n{chap.get('text', '')}\n\n"
+        for fname, title in sorted_content_files:
             if fname.startswith(f"book/gen/{chap['preffix'].replace('.', '_')}"):
                 sub_name = fname[5:].replace(':', '\\:')
-                fp.write(f"    - file: {sub_name}\n")
+                s += f"* [{title}]({sub_name})\n"
+    fp = open("book/gen/index.md", "w")
+    fp.write(s)
     fp.close()
 
 
@@ -277,6 +278,7 @@ if __name__ == "__main__":
     list_output_files = []
     for ex in list_exercises():
         full_path = get_full_path(ex)
-        list_output_files.append(get_output_fname(full_path))
+        title = get_title(full_path)
+        list_output_files.append([get_output_fname(full_path), title])
         gen_content(full_path)
     write_toc(list_output_files)

@@ -4,7 +4,7 @@ name: publish-book
 on:
   push:
     branches:
-    - master
+    - dev
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
@@ -33,18 +33,15 @@ jobs:
         pip install -r requirements.txt
 
     # Build the html version of the book
-    - name: Generate markdown content
+    - name: Generate content
       run: |
         mkdir book/gen
         python py/gen_md.py
-    - name: Build the html-book
-      run: |
-        cd book
-        jupyter-book build .
+        pandoc book/gen/index.md -o book/gen/index.html
 
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./book/_build/html
+        publish_dir: ./book/gen
         
