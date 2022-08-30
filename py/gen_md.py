@@ -231,13 +231,14 @@ def write_toc(list_content_files):
     listées dans `py/parts.json` et de la liste des fichiers fournie en argument."""
     toc_chapters = json.load(open("py/parts.json", "r"))
     sorted_content_files = sorted(list_content_files)
+    base_url = "https://mybinder.org/v2/gh/rtavenar/exos_python/gh-pages?labpath="
     
     s = "# S'entraîner à coder en Python\n\n"
     for chap in toc_chapters:
         s += f"\n\n## {chap['preffix']} {chap['title']}\n\n{chap.get('text', '')}\n\n"
         for fname, title in sorted_content_files:
             if fname.startswith(f"book/gen/{chap['preffix'].replace('.', '_')}"):
-                sub_name = fname[5:].replace(':', '\\:')
+                sub_name = base_url + fname[9:].replace(':', '\\:')
                 s += f"* [{title}]({sub_name})\n"
     fp = open("book/gen/index.md", "w")
     fp.write(s)
