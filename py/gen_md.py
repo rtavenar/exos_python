@@ -33,6 +33,31 @@ def format_code(code_skeleton, code_sol, files, problem_id, unit_test_file=None,
     """Traduit un squelette et une solution proposée en code HTML permettant
     de présenter le squelette dans un encadré PyScript et la solution dans une
     section cachée que l'on peut afficher."""
+    s = "\n\n"
+
+    json_content = {
+        "id": problem_id,
+        "title": "Testez votre solution ici",
+        "src": code_skeleton
+    }
+    if len(files) > 0:
+        json_content["files"] = include_files(files)
+    if unit_test_file is not None:
+        with open(unit_test_file, "r") as fp:
+            unit_test_contents = json.load(fp)
+            unit_test_code = unit_test_contents["tests"][0]["code"].split("\n")
+            
+            content_ut = open(os.path.join("py", "unittest_template.py"), "r").read().format("\n        ".join(unit_test_code))
+            
+            json_content["files"] = json_content.get("files", {})
+            json_content["files"].update(
+                {
+                    ".grader.py": {
+                        "type": "text",
+                        "body": content_ut
+                    }
+                }
+            )
     while "\n\n#" in code_skeleton:
         code_skeleton = code_skeleton.replace("\n\n#", "\n#")
     code_skeleton = code_skeleton.strip()
