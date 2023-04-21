@@ -6,6 +6,7 @@ sphinx:
   config:
     html_show_copyright: false
     html_extra_path: ['assets']
+    html_js_files: [ ['https://pyscript.net/latest/pyscript.js', {'defer': 'defer'}] ]
 repository:
   url                       : https://github.com/rtavenar/exos_python  # Online location of your book
   path_to_book              : book  # Optional path to your book, relative to the repository root

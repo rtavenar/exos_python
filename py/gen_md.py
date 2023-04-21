@@ -1,6 +1,11 @@
 import os
 import json
+from unidecode import unidecode
 
+config_pyscript = """<py-config>
+    [splashscreen]
+        enabled = false
+</py-config>"""
 
 def replace_urls(text):
     """Applique les changements d'URLs spécifiés dans le fichier 
@@ -26,50 +31,26 @@ def comment_code(code):
 
 def format_code(code_skeleton, code_sol, files, problem_id, unit_test_file=None, io_test_folder=None):
     """Traduit un squelette et une solution proposée en code HTML permettant
-    de présenter le squelette dans un encadré Pythonpad et la solution dans une
-    section caché que l'on peut afficher."""
-    s = "\n\n"
-
-    json_content = {
-        "id": problem_id,
-        "title": "Testez votre solution ici",
-        "src": code_skeleton
-    }
-    if len(files) > 0:
-        json_content["files"] = include_files(files)
-    if unit_test_file is not None:
-        with open(unit_test_file, "r") as fp:
-            unit_test_contents = json.load(fp)
-            unit_test_code = unit_test_contents["tests"][0]["code"].split("\n")
-            
-            content_ut = open(os.path.join("py", "unittest_template.py"), "r").read().format("\n        ".join(unit_test_code))
-            
-            json_content["files"] = json_content.get("files", {})
-            json_content["files"].update(
-                {
-                    ".grader.py": {
-                        "type": "text",
-                        "body": content_ut
-                    }
-                }
-            )
-    # Below is commented out for now since input() is blocked by PythonPad
-    # elif io_test_folder is not None:
-    #     content_ut = open(os.path.join("py", "io_test_template.py"), "r").read()
-    #     json_content["files"] = json_content.get("files", {})
-    #     json_content["files"].update(
-    #         {
-    #             ".grader.py": {
-    #                 "type": "text",
-    #                 "body": content_ut
-    #             }
-    #         }
-    #     )
-        
+    de présenter le squelette dans un encadré PyScript et la solution dans une
+    section cachée que l'on peut afficher."""
+    while "\n\n#" in code_skeleton:
+        code_skeleton = code_skeleton.replace("\n\n#", "\n#")
+    code_skeleton = code_skeleton.strip()
     
-    json_str = str(json_content)
-    s += """<div id="pad"></div>
-            <script>Pythonpad('pad', %s)</script>\n\n\n""" % json_str
+    s += """## Codez votre solution ci-dessous
+
+%s
+<py-repl>
+    %s
+</py-repl>
+<py-terminal id="my-terminal"></py-terminal>
+<py-script>
+from js import document as _DOC
+def clear_term():
+    ter = _DOC.getElementById("my-terminal").firstChild
+    ter.innerHTML = ''
+</py-script>
+<button py-click="clear_term()" id="clear-terminal" class="py-button">Nettoyer la console de sortie</button>\n\n\n""" % (config_pyscript, code_skeleton)
     
     s += "````{admonition} Cliquez ici pour voir la solution\n:class: tip, dropdown\n\n"
     s += "```python\n"
@@ -120,11 +101,11 @@ def get_output_fname(input_folder):
     -------
     
     >>> get_output_fname("data/3.F. If/else: Échecs : mouvement du roi")
-    'book/gen/3_F_ If_else_ Échecs _ mouvement du roi.md'
+    'book/gen/3_F_ If_else_ Echecs _ mouvement du roi.md'
     """
     title = get_title(input_folder)
     title = title.replace("/", "_").replace(":", "_")
-    title = title.replace(".", "_")
+    title = unidecode(title.replace(".", "_"))
     return os.path.join("book", "gen", title + ".md")
 
 
@@ -233,13 +214,13 @@ def write_toc(list_content_files):
     fp.write("format: jb-book\nroot: index\nchapters:\n")
     for chap in toc_chapters:
         fname_chap = "gen/" + chap['preffix'] + " " + chap['title'].replace("/", "_") + ".md"
-        open("book/" + fname_chap, "w").write(f"# {chap['preffix']} {chap['title']}\n\n{chap.get('text', '')}")
+        open("book/" + fname_chap, "w").write(f"# {chap['preffix']} {chap['title']}\n\n{chap.get('text', '')}\n\n{config_pyscript}")
         fp.write(f"  - file: {fname_chap}\n")
         fp.write("    sections:\n")
         for fname in sorted_content_files:
             if fname.startswith(f"book/gen/{chap['preffix'].replace('.', '_')}"):
                 sub_name = fname[5:].replace(':', '\\:')
-                fp.write(f"    - file: {sub_name}\n")
+                fp.write(f"    - file: {unidecode(sub_name)}\n")
     fp.close()
 
 
