@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>3.1. If/else: Pair ou impair &#8212; Exercices de Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pyscript.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/betterpyrepl.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script defer="defer" src="https://pyscript.net/latest/pyscript.js"></script>
+    <script src="../_static/custom.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'gen/3_1_ If_else_ Pair ou impair';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3.2. If/else: Minimum de deux nombres" href="3_2_%20If_else_%20Minimum%20de%20deux%20nombres.html" />
+    <link rel="prev" title="3. If / else" href="3.%20If%20_%20else.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Exercices de Python</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Page d’accueil
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="1.%20Input%20_%20print.html">1. Input / print</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_1_%20Input_print_%20Somme%20de%20trois%20nombres.html">1.1. Input/print: Somme de trois nombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_2_%20Input_print_%20Calcul%20de%20l%27aire%20d%27un%20triangle%20rectangle.html">1.2. Input/print: Calcul de l’aire d’un triangle rectangle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_3_%20Input_print_%20Hello%2C%20Harry%21.html">1.3. Input/print: Hello, Harry!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_4_%20Input_print_%20Precedent%20et%20suivant.html">1.4. Input/print: Précédent et suivant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_5_%20Input_print_%20Partage%20de%20pommes.html">1.5. Input/print: Partage de pommes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_6_%20Input_print_%20Heures%20et%20minutes.html">1.6. Input/print: Heures et minutes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_7_%20Input_print_%20Deux%20horodatages.html">1.7. Input/print: Deux horodatages</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="2.%20Nombres.html">2. Nombres</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_1_%20Nombres%20_%20deux%20chiffres.html">2.1. Nombres : deux chiffres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_2_%20Nombres%20_%20echanger%20les%20chiffresdigits.html">2.2. Nombres : échanger les chiffresdigits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_3_%20Nombres%20_%20deux%20derniers%20chiffres.html">2.3. Nombres : deux derniers chiffres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_4_%20Nombres%20_%20chiffre%20des%20dizaines.html">2.4. Nombres : chiffre des dizaines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_5_%20Nombres%20_%20premier%20chiffre%20apres%20la%20virgule.html">2.5. Nombres : premier chiffre après la virgule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_6_%20Nombres%20_%20somme%20des%20chiffres.html">2.6. Nombres : somme des chiffres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_7_%20Nombres%20_%20parcours%20d%27une%20voiture.html">2.7. Nombres : parcours d’une voiture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_8_%20Nombres%20_%20siecle.html">2.8. Nombres : siècle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_9_%20Nombres%20_%20cout%20total.html">2.9. Nombres : coût total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_A_%20Nombres%20_%20jour%20de%20la%20semaine.html">2.A. Nombres : jour de la semaine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_B_%20Nombres%20_%20horloge%20numerique.html">2.B. Nombres : horloge numérique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_C_%20Nombres%20_%20cadran%20d%27une%20horloge.html">2.C. Nombres : cadran d’une horloge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_D_%20Nombres%20_%20bureaux%20d%27une%20ecole.html">2.D. Nombres : bureaux d’une école</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="3.%20If%20_%20else.html">3. If / else</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.1. If/else: Pair ou impair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_2_%20If_else_%20Minimum%20de%20deux%20nombres.html">3.2. If/else: Minimum de deux nombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_3_%20If_else_%20Signe.html">3.3. If/else: Signe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_4_%20If_else_%20Nombre%20a%203%20chiffres.html">3.4. If/else: Nombre à 3 chiffres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_5_%20If_else_%20Un%20seul%20positif.html">3.5. If/else: Un seul positif</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_6_%20If_else_%20Chiffres%20croissants.html">3.6. If/else: Chiffres croissants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_7_%20If_else_%20Palindrome%20a%204%20chiffres.html">3.7. If/else: Palindrome à 4 chiffres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_8_%20If_else_%20Minimum%20de%203%20nombres.html">3.8. If/else: Minimum de 3 nombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_9_%20If_else_%20Nombre%20de%20jours%20dans%20un%20mois.html">3.9. If/else: Nombre de jours dans un mois</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_A_%20If_else_%20Nombres%20egaux.html">3.A. If/else: Nombres égaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_B_%20If_else_%20Position%20d%27un%20outlier.html">3.B. If/else: Position d’un outlier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_C_%20If_else_%20Echecs%20_%20mouvement%20de%20tour.html">3.C. If/else: Échecs : mouvement de tour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_D_%20If_else_%20Echecs%20_%20case%20noire.html">3.D. If/else: Échecs : case noire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_E_%20If_else_%20Echecs%20-%20meme%20couleur.html">3.E. If/else: Échecs - même couleur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_F_%20If_else_%20Echecs%20_%20mouvement%20du%20roi.html">3.F. If/else: Échecs : mouvement du roi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_G_%20If_else_%20Echecs%20_%20mouvements%20de%20fou.html">3.G. If/else: Échecs : mouvements de fou</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_H_%20If_else_%20Echecs%20_%20mouvements%20de%20reine.html">3.H. If/else: Échecs : mouvements de reine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_I_%20If_else_%20Echecs%20_%20mouvement%20de%20cavalier.html">3.I. If/else: Échecs : mouvement de cavalier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_J_%20If_else_%20Annee%20bissextile.html">3.J. If/else: Année bissextile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_K_%20If_else_%20Jour%20suivant.html">3.K. If/else: Jour suivant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_L_%20If_else_%20Equation%20lineaire.html">3.L. If/else: Équation linéaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_M_%20If_else_%20Minimum%20de%205%20nombres.html">3.M. If/else: Minimum de 5 nombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_N_%20If_else_%20Sommets%20d%27un%20rectangle.html">3.N. If/else: Sommets d’un rectangle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_O_%20If_else_%20Tri%20de%203%20nombres.html">3.O. If/else: Tri de 3 nombres</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="4.%20For.html">4. For</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_1_%20For_%20Series%20-%201.html">4.1. For: Series - 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_2_%20For_%20Series%20-%202.html">4.2. For: Series - 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_3_%20For_%20Somme%20de%2010%20nombres.html">4.3. For: Somme de 10 nombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_4_%20For_%20Somme%20de%20N%20nombres.html">4.4. For: Somme de N nombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_5_%20For_%20Somme%20des%20cubes.html">4.5. For: Somme des cubes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_6_%20For_%20Factorielle.html">4.6. For: Factorielle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_7_%20For_%20Nombre%20de%20zeros.html">4.7. For: Nombre de zéros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_8_%20For_%20Somme%20de%20factorielles.html">4.8. For: Somme de factorielles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_9_%20For_%20Carte%20perdue.html">4.9. For: Carte perdue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_A_%20For_%20Echelle.html">4.A. For: Echelle</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="5.%20Cha%C3%AEnes%20de%20caract%C3%A8res.html">5. Chaînes de caractères</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_1_%20Chaines%20de%20caracteres%20_%20Slices.html">5.1. Chaînes de caractères : Slices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_2_%20Chaines%20de%20carateres%20_%20nombre%20de%20mots.html">5.2. Chaînes de caratères : nombre de mots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_3_%20Chaines%20de%20caracteres%20_%20deux%20moities.html">5.3. Chaînes de caractères : deux moitiés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_4_%20Chaines%20de%20caracteres%20_%20echanger%20deux%20mots.html">5.4. Chaînes de caractères : échanger deux mots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_5_%20Chaines%20de%20caracteres%20_%20premiere%20et%20derniere%20occurences.html">5.5. Chaînes de caractères : première et dernière occurences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_6_%20Chaines%20de%20caracteres%20_%20deuxieme%20occurrence.html">5.6. Chaînes de caractères : deuxième occurrence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_7_%20Chaine%20de%20caracteres%20_%20retirer%20une%20partie.html">5.7. Chaîne de caractères : retirer une partie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_8_%20Chaines%20de%20carateres%20_%20inverser%20une%20partie.html">5.8. Chaînes de caratères : inverser une partie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_9_%20Chaines%20de%20caracteres%20_%20remplacer.html">5.9. Chaînes de caractères : remplacer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_A_%20Chaines%20de%20caracteres%20_%20retirer%20un%20caractere.html">5.A. Chaînes de caractères : retirer un caractère</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_B_%20Chaine%20de%20caracteres%20_%20remplacer%20dans%20une%20sous-partie.html">5.B. Chaîne de caractères : remplacer dans une sous-partie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_C_%20Chaines%20de%20caracteres%20_%20retirer%20un%20caractere%20tous%20les%20trois%20caracteres.html">5.C. Chaînes de caractères : retirer un caractère tous les trois caractères</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="6.%20While.html">6. While</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="6_1_%20While_%20Liste%20des%20carres.html">6.1. While: Liste des carrés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_2_%20While_%20Plus%20petit%20diviseur.html">6.2. While: Plus petit diviseur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_3_%20While_%20Puissances%20de%202.html">6.3. While: Puissances de 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_4_%20While_%20Course%20a%20pied.html">6.4. While: Course à pied</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_5_%20While_%20Longueur%20d%27une%20sequence.html">6.5. While: Longueur d’une séquence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_6_%20While_%20Somme%20d%27une%20sequence.html">6.6. While: Somme d’une séquence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_7_%20While_%20Moyenne%20d%27une%20sequence.html">6.7. While: Moyenne d’une séquence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_8_%20While_%20Maximum%20d%27une%20sequence.html">6.8. While: Maximum d’une séquence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_9_%20While_%20Indice%20du%20maximum.html">6.9. While: Indice du maximum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_A_%20While_%20Nombre%20d%27elements%20pairs.html">6.A. While: Nombre d’éléments pairs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_B_%20While_%20Plus%20grand%20que%20le%20precedent.html">6.B. While: Plus grand que le précédent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_C_%20While_%20Deuxieme%20plus%20grande%20valeur.html">6.C. While: Deuxième plus grande valeur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_D_%20While_%20nombre%20de%20maxima.html">6.D. While: nombre de maxima</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_E_%20While_%20plus%20grande%20sous-serie.html">6.E. While: plus grande sous-série</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_F_%20While_%20nombres%20de%20Fibonacci.html">6.F. While: nombres de Fibonacci</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_G_%20While_%20indice%20de%20Fibonacci.html">6.G. While: indice de Fibonacci</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="7.%20Listes.html">7. Listes</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="7_1_%20Lists_%20Indice%20pair.html">7.1. Lists: Indice pair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_2_%20Lists_%20Element%20pair.html">7.2. Lists: Element pair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_3_%20Lists_%20Plus%20grand%20que%20le%20voisin%20de%20gauche.html">7.3. Lists: Plus grand que le voisin de gauche</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_4_%20Lists_%20Meme%20signe%20que%20son%20voisin.html">7.4. Lists: Même signe que son voisin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_5_%20Lists_%20Plus%20grand%20que%20ses%20voisins.html">7.5. Lists: Plus grand que ses voisins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_6_%20Lists_%20Nombre%20d%27elements%20distincts.html">7.6. Lists: Nombre d’éléments distincts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_7_%20Lists_%20Inversion%20des%20voisins.html">7.7. Lists: Inversion des voisins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_8_%20Lists_%20Maximum.html">7.8. Lists: Maximum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_9_%20Lists_%20Inversion%20du%20min%20et%20du%20max.html">7.9. Lists: Inversion du min et du max</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_A_%20Lists_%20Pairs%20de%20nombres%20egaux.html">7.A. Lists: Pairs de nombres égaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_B_%20Lists_%20Element%20unique.html">7.B. Lists: Element unique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_C_%20Lists_%20Huit%20reines.html">7.C. Lists: Huit reines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7_D_%20Lists_%20Bowling.html">7.D. Lists: Bowling</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="8.%20Listes%202D.html">8. Listes 2D</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="8_1_%20Listes%202D%20_%20multiplicateur.html">8.1. Listes 2D : multiplicateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_2_%20Listes%202D%20_%20maximum.html">8.2. Listes 2D : maximum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_3_%20Listes%202D%20_%20diagonales.html">8.3. Listes 2D : diagonales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_4_%20Listes%202D%20_%20triangles.html">8.4. Listes 2D : triangles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_5_%20Listes%202D%20_%20echanger%20des%20colonnes.html">8.5. Listes 2D : échanger des colonnes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_6_%20Listes%202D%20_%20flocon%20de%20neige.html">8.6. Listes 2D : flocon de neige</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8_7_%20Listes%202D%20_%20damier.html">8.7. Listes 2D : damier</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="9.%20Sets.html">9. Sets</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="9_1_%20Sets%20_%20nombre%20d%27elements%20distincts.html">9.1. Sets : nombre d’éléments distincts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_2_%20Sets%20_%20nombre%20d%27elements%20communs.html">9.2. Sets : nombre d’éléments communs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_3_%20Sets%20_%20intersection.html">9.3. Sets : intersection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_4_%20Sets%20_%20deja%20vu.html">9.4. Sets : déjà vu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_5_%20Sets%20_%20deviner%20le%20nombre.html">9.5. Sets : deviner le nombre</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="A.%20Dictionnaires.html">A. Dictionnaires</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="A_1_%20Dicts_%20Nombre%20d%27occurrences.html">A.1. Dicts: Nombre d’occurrences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A_2_%20Dicts_%20Synonymes.html">A.2. Dicts: Synonymes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A_3_%20Dicts_%20Elections.html">A.3. Dicts: Elections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A_4_%20Dicts_%20Mot%20le%20plus%20frequent.html">A.4. Dicts: Mot le plus fréquent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A_5_%20Dicts_%20Droits%20d%27acces.html">A.5. Dicts: Droits d’accès</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A_6_%20Dicts_%20Pays%20et%20villes.html">A.6. Dicts: Pays et villes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A_7_%20Dicts_%20Analyse%20de%20la%20frequence%20de%20mots.html">A.7. Dicts: Analyse de la fréquence de mots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="A_8_%20Dicts_%20Dictionnaire%20Francais-Latin.html">A.8. Dicts: Dictionnaire Français-Latin</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="B.%20Fonctions.html">B. Fonctions</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="B_1%20Fonctions%20_%20retourne%20un%20affichage.html">B.1 Fonctions : retourne un affichage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="B_2%20Fonctions%20_%20passage%20d%27un%20parametre.html">B.2 Fonctions : passage d’un paramètre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="B_3%20Fonctions%20_%20retourne%20une%20valeur.html">B.3 Fonctions : retourne une valeur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="B_4%20Fonctions%20_%20Argument%20avec%20une%20valeur%20par%20defaut.html">B.4 Fonctions : Argument avec une valeur par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="B_5%20Fonctions%20_%20appels%20recursifs.html">B.5 Fonctions : appels récursifs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="C.%20Fichiers.html">C. Fichiers</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="C_1%20Fichiers%20_%20les%20fichiers%20texte%20plat.html">C.1 Fichiers : les fichiers texte plat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="C_2%20Fichiers%20_%20les%20fichiers%20CSV.html">C.2 Fichiers : les fichiers CSV</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="C_3%20Fichiers%20_%20les%20fichiers%20JSON.html">C.3 Fichiers : les fichiers JSON</a></li>
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="D.%20Objet.html">D. Objet</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="D_1_%20Objet%20_%20creation%20sans%20parametre.html">D.1. Objet : création sans paramètre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="D_2_%20Objet%20_%20creation%20avec%20parametres.html">D.2. Objet : création avec paramètres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="D_3_%20Objet%20_%20creation%20avec%20parametres%20facultatifs.html">D.3. Objet : création avec paramètres facultatifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="D_4_%20Objet%20_%20utilisation%20d%27un%20attribut.html">D.4. Objet : utilisation d’un attribut</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="D_5_%20Objet%20_%20utilisation%20d%27une%20methode%20sans%20parametre.html">D.5. Objet : utilisation d’une méthode sans paramètre</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="D_6_%20Objet%20_%20utilisation%20d%27une%20methode%20avec%20parametres.html">D.6. Objet : utilisation d’une méthode avec paramètres</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="D_7_%20Objet%20_%20definition%20d%27une%20classe%20et%20de%20son%20initialisateur.html">D.7. Objet : définition d’une classe et de son initialisateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="D_8_%20Objet%20_%20definition%20d%27une%20methode%20d%27instance.html">D.8. Objet : définition d’une méthode d’instance</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/gen/3_1_ If_else_ Pair ou impair.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>3.1. If/else: Pair ou impair</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consigne">Consigne</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-d-entree-1">Exemple d’entrée #1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-de-sortie-1">Exemple de sortie #1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-d-entree-2">Exemple d’entrée #2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-de-sortie-2">Exemple de sortie #2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aide">Aide</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codez-votre-solution-ci-dessous">Codez votre solution ci-dessous</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="if-else-pair-ou-impair">
+<h1>3.1. If/else: Pair ou impair<a class="headerlink" href="#if-else-pair-ou-impair" title="Permalink to this heading">#</a></h1>
+<section id="consigne">
+<h2>Consigne<a class="headerlink" href="#consigne" title="Permalink to this heading">#</a></h2>
+<p>Étant donné un entier, afficher “pair” s’il est pair ou “impair” sinon.</p>
+</section>
+<section id="exemple-d-entree-1">
+<h2>Exemple d’entrée #1<a class="headerlink" href="#exemple-d-entree-1" title="Permalink to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span>
+</pre></div>
+</div>
+</section>
+<section id="exemple-de-sortie-1">
+<h2>Exemple de sortie #1<a class="headerlink" href="#exemple-de-sortie-1" title="Permalink to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">impair</span>
+</pre></div>
+</div>
+</section>
+<section id="exemple-d-entree-2">
+<h2>Exemple d’entrée #2<a class="headerlink" href="#exemple-d-entree-2" title="Permalink to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">6</span>
+</pre></div>
+</div>
+</section>
+<section id="exemple-de-sortie-2">
+<h2>Exemple de sortie #2<a class="headerlink" href="#exemple-de-sortie-2" title="Permalink to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pair</span>
+</pre></div>
+</div>
+</section>
+<section id="aide">
+<h2>Aide<a class="headerlink" href="#aide" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle">https://rtavenar.github.io/poly_python/content/struct.html#structures-de-controle</a></p>
+</section>
+<section id="codez-votre-solution-ci-dessous">
+<h2>Codez votre solution ci-dessous<a class="headerlink" href="#codez-votre-solution-ci-dessous" title="Permalink to this heading">#</a></h2>
+<py-config>
+    [splashscreen]
+        enabled = false
+</py-config>
+<py-repl>
+    # Lire un entier
+# a = int(input())
+# Afficher une valeur:
+# print(a)
+</py-repl>
+<py-terminal id="my-terminal"></py-terminal>
+<py-script>
+from js import document as _DOC
+def clear_term():
+    ter = _DOC.getElementById("my-terminal").firstChild
+    ter.innerHTML = ''
+</py-script>
+<button py-click="clear_term()" id="clear-terminal" class="py-button">Nettoyer la console de sortie</button>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Cliquez ici pour voir la solution</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pair&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;impair&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "rtavenar/exos_python",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./gen"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="3.%20If%20_%20else.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">3. If / else</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="3_2_%20If_else_%20Minimum%20de%20deux%20nombres.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">3.2. If/else: Minimum de deux nombres</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consigne">Consigne</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-d-entree-1">Exemple d’entrée #1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-de-sortie-1">Exemple de sortie #1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-d-entree-2">Exemple d’entrée #2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple-de-sortie-2">Exemple de sortie #2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aide">Aide</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codez-votre-solution-ci-dessous">Codez votre solution ci-dessous</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Xavier André, Mathieu Ben, Romain Tavenard -- Université de Rennes 2
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>CC BY-SA</p>
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
